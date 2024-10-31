@@ -1,0 +1,298 @@
+    * {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        font-family: 'Poppins';
+        background-color: #ffffff;
+    }
+
+    @font-face {
+        font-family: Belleza;
+        src: url(assets/Belleza-Regular.ttf);
+    }
+
+    @font-face {
+        font-family: poppins;
+        src: url(assets/Poppins-Regular.ttf);
+    }
+
+    header {
+
+        position: fixed;
+        top: -5vh;
+        width: 100%;
+        z-index: 1000;
+        /* Garante que o cabeçalho fique acima de outros elementos */
+        padding: 10px 0;
+    }
+
+    .container {
+        display: flex;
+        height: 19vh;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #FFF;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.396);
+    }
+
+    /* ESSA É A PARTE DE LOGO E TITULO SUNFLOWER */
+    .logo-titulo {
+        display: flex;
+        margin-top: 2vh;
+    }
+
+    .imagem {
+        max-width: 50%;
+    }
+
+    .imagem img {
+        width: 50%;
+        margin-left: 5vh;
+
+    }
+
+    .titulo {
+        margin-top: 2.1vh;
+        margin-left: 1vh;
+        font-family: Belleza;
+        font-weight: 300;
+        font-size: 25px;
+
+    }
+
+    /* ESSA É A PARTE DE INICIO SOBRE ...... */
+    #navegacao {
+        display: flex;
+        margin: 4vh;
+        margin-top: 6vh;
+
+    }
+
+    #navegacao h3 {
+        font-family: poppins;
+        font-weight: 300;
+    }
+
+    #navegacao div {
+        margin: 5vh;
+        cursor: pointer;
+    }
+
+    /*JOGOS EDUCACIONAIS*/
+
+    .jogos-educacionais {
+        position: relative;
+        display: inline-block;
+    }
+
+    .jogos-verde {
+        width: 1515px;
+        max-width: 120%;
+    }
+
+    .jogos-imagem1 {
+        position: absolute;
+        top: 40%;
+        left: 80%;
+        transform: translate(-50%, -50%);
+        width: 30%;
+        /* Ajusta a largura para caber dentro do contêiner */
+        max-width: 60%;
+        /* Limita o tamanho máximo */
+    }
+
+    .text-jogos {
+        position: absolute;
+        font-family: 'Poppins';
+        font-size: 43px;
+        color: #000000A9;
+        top: 30%;
+        left: 300px;
+    }
+
+    .img-quiz {
+        width: 250px;
+        margin-top: 100px;
+        margin-left: 200px;
+    }
+
+    .img-velha {
+        width: 200px;
+        margin-left: 1000px;
+        margin-top: -200px;
+    }
+
+    .quiz-aprendizado p {
+        margin-left: 700px;
+
+
+    }
+
+    .button-quiz {
+        border: 2px solid #FED3DA;
+        width: 120px;
+        height: 30px;
+        border-radius: 20px;
+        background-color: #FED3DA;
+        margin-left: 930px;
+        margin-top: 20px;
+    }
+
+    .button-velha {
+        border: 2px solid #AEEBD9;
+        width: 120px;
+        height: 30px;
+        border-radius: 20px;
+        background-color: #AEEBD9;
+        margin-left: 350px;
+        margin-top: 20px;
+    }
+
+    .button-memoria {
+        border: 2px solid #D6DDED;
+        width: 120px;
+        height: 30px;
+        border-radius: 20px;
+        background-color: #D6DDED;
+        margin-left: 980px;
+        margin-top: 20px;
+    }
+
+    .quiz-aprendizado h1 {
+        margin-top: -170px;
+        margin-left: 130vh;
+    }
+
+    .jogo-velha h1 {
+        margin-top: 200px;
+        margin-left: 40vh;
+    }
+
+    .jogo-velha p {
+        margin-top: 20px;
+        margin-left: 100px;
+    }
+
+    .jogo-memoria h1 {
+        margin-left: 120vh;
+        margin-top: -170px;
+    }
+
+    .jogo-memoria p {
+        margin-top: 20px;
+        margin-left: 700px;
+    }
+
+    /*TEA*/
+    .comeco-tea {
+        margin-top: 200px;
+    }
+
+    .tea {
+        font-size: 8vh;
+        font-family: 'Poppins';
+        margin-top: -30vh;
+        margin-left: 40vh;
+
+    }
+
+    .transtorno {
+        margin-left: 25vh;
+    }
+
+    .tea-coracao {
+        width: 350px;
+        height: auto;
+        margin-left: 110vh;
+    }
+
+    /*oque é*/
+
+    .meio-pagina {
+        width: 1515px;
+        height: 600px;
+        margin-top: 300px;
+        background-color: #E8FAF0;
+    }
+
+    .meio-pagina h1 {
+        font-family: 'Poppins';
+        font-weight: 100;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .quebra-cabeca1,
+    .quebra-cabeca2,
+    .quebra-cabeca3 {
+        width: 50px;
+        height: auto;
+    }
+
+    .quebra-cabeca1 {
+        margin-left: 80px;
+        margin-top: 30px;
+    }
+
+    .texto1 {
+        margin-top: -40px;
+        margin-left: 150px;
+    }
+
+    .quebra-cabeca2 {
+        margin-left: 150px;
+        margin-top: 20px;
+    }
+
+    /* FOOTER */
+
+    .girassol {
+        margin-top: 20VH;
+    }
+
+    .rodape {
+        text-align: center;
+        align-items: center;
+        display: flex;
+        margin-top: 7vh;
+        width: 96vh;
+        margin-left: 56vh;
+        justify-content: space-around;
+    }
+
+    footer {
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    a {
+
+        text-decoration: none;
+        color: #000000;
+    }
+
+
+    .linha {
+        width: 214vh;
+        margin-top: 8vh;
+        border: none;
+        height: 2px;
+        background-color: #D7D7D7;
+
+    }
+
+    .ultimo-texto p {
+        margin-top: 10vh;
+        color: #8F8F8F;
+    }

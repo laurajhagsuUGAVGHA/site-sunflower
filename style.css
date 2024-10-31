@@ -1,0 +1,693 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    font-family: 'Poppins';
+    background-color: #ffffff;
+}
+
+@font-face {
+    font-family: Belleza;
+    src: url(assets/Belleza-Regular.ttf);
+}
+
+@font-face {
+    font-family: poppins;
+    src: url(assets/Poppins-Regular.ttf);
+}
+
+header {
+
+    position: fixed;
+    top: -5vh;
+    width: 100%;
+    z-index: 1000;
+    /* Garante que o cabeçalho fique acima de outros elementos */
+    padding: 10px 0;
+}
+
+.container {
+    display: flex;
+    height: 19vh;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFF;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.396);
+}
+
+/* ESSA É A PARTE DE LOGO E TITULO SUNFLOWER */
+.logo-titulo {
+    display: flex;
+    margin-top: 2vh;
+}
+
+.imagem {
+    max-width: 50%;
+}
+
+.imagem img {
+    width: 50%;
+    margin-left: 5vh;
+
+}
+
+.titulo {
+    margin-top: 2.1vh;
+    margin-left: 1vh;
+    font-family: Belleza;
+    font-weight: 300;
+    font-size: 25px;
+
+}
+
+/* ESSA É A PARTE DE INICIO SOBRE ...... */
+#navegacao {
+    display: flex;
+    margin: 4vh;
+    margin-top: 6vh;
+
+}
+
+#navegacao h3 {
+    font-family: poppins;
+    font-weight: 300;
+}
+
+#navegacao div {
+    margin: 5vh;
+    cursor: pointer;
+}
+
+/* CARROSSEL */
+
+.carousel {
+    position: relative;
+    width: 98.8vw;
+    overflow: hidden;
+    margin-top: -2.9vh;
+}
+
+.carousel-container {
+    display: none;
+    width: 100vw;
+    height: 200vh;
+
+}
+
+.carousel-container.active {
+    display: block;
+}
+
+.carousel img {
+    width: 100%;
+    max-width: 100%;
+    height: 125vh;
+
+}
+
+.carousel-text1 {
+    position: relative;
+    margin-top: -60vh;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #ffffff;
+    line-height: 12vh;
+    font-size: 8vh;
+    width: 90vh;
+    font-family: poppins;
+    text-align: center;
+}
+
+.carousel-text2 {
+    position: relative;
+    margin-top: -60vh;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #ffffff;
+    line-height: 12vh;
+    font-size: 6vh;
+    width: 110vh;
+    font-family: poppins;
+    text-align: center;
+}
+
+.texto1 {
+    font-size: 6vh;
+}
+
+.span {
+    font-size: 5vh;
+}
+
+.carousel-text3 {
+    position: relative;
+    margin-top: -60vh;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #ffffff;
+    line-height: 12vh;
+    font-size: 8vh;
+    width: 175vh;
+    font-family: poppins;
+    text-align: center;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 30%;
+    background-color: rgba(0, 0, 0, 0);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 60px;
+}
+
+.prev {
+    left: 5px;
+}
+
+.next {
+    right: 5px;
+}
+
+
+
+
+/* parte do texto dois titulo */
+.titulo-dois {
+    margin-top: -25vw;
+    align-items: center;
+    text-align: center;
+}
+
+.inclusao {
+    font-weight: 700;
+    font-family: poppins;
+    font-size: 5vh;
+}
+
+.importancia {
+    margin-top: 2vh;
+    font-weight: 200;
+    font-family: poppins;
+    font-size: 3.7vh;
+}
+
+.icones {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin-top: 24vh;
+    font-family: poppins;
+}
+
+.texto {
+    width: 50vh;
+    margin-top: 1vh;
+    line-height: 4vh;
+
+}
+
+/* parte laranje */
+
+.container-laranja {
+    display: flex;
+    margin-top: 30vh;
+    max-width: 100%;
+    height: 82.2vh;
+    background-color: #ff84385f;
+    font-family: poppins;
+    justify-content: space-between;
+    font-weight: 300;
+}
+
+.objetivo h2 {
+    font-size: 5vh;
+
+}
+
+.imagemCrian img {
+    width: 107vh;
+    height: 82vh;
+}
+
+.objetivo {
+    margin-top: 20vh;
+    line-height: 5vh;
+    width: 96vh;
+    font-size: 3vh;
+}
+
+.objetivo ul {
+    margin-top: 10vh;
+}
+
+.container-laranja h2 {
+    text-align: center;
+
+}
+
+/* NOSSO APLICATIVO */
+
+
+.titulo-NossoApp {
+    text-align: center;
+    font-family: 'Poppins';
+    margin-top: 26vh;
+    font-size: 4vh;
+}
+
+.nossoAplicativo {
+    display: flex;
+    justify-content: space-around;
+    width: 210vh;
+    margin-top: 10vh;
+    font-family: 'Poppins';
+    text-align: center;
+    font-size: 2.5vh;
+}
+
+.app {
+    margin-top: 8vh;
+}
+
+.nossoAplicativo p {
+    text-align: center;
+    margin: 1vh auto 0;
+
+}
+
+
+.quiz,
+.chat,
+.concentracao,
+.calendario {
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.282);
+    width: 207px;
+    height: 264px;
+    background-color: #f5d2d1ca;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transition: transform 0.1s ease-in-out, z-index 0.3s ease-in-out;
+}
+
+.quiz:hover,
+.chat:hover,
+.concentracao:hover,
+.calendario:hover {
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+.app {
+    overflow: hidden;
+}
+
+/* PARTE VERDE PARA ABAIXAR O APP */
+
+.container-verde {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 40vh;
+    width: 100%;
+    max-width: 100%;
+    height: 80vh;
+    background-color: #e8faf0;
+}
+
+.box-dois {
+    width: 80%;
+    text-align: center;
+}
+
+.box {
+    align-items: center;
+    text-align: center;
+    width: 50%;
+}
+
+.box h2 {
+    width: 60vh;
+    font-size: 6vh;
+    font-weight: 200;
+}
+
+.boxJuntas {
+    margin-top: 6vh;
+    display: flex;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 191px;
+    height: 76px;
+    background-color: #FFF;
+    font-family: 'Poppins', sans-serif;
+    border: 1px solid #5d5b5b55;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.1s ease-in-out;
+}
+
+button img {
+    width: 30px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.android p {
+    font-size: 2.1vh;
+    font-weight: 300;
+    width: 80%;
+    margin-left: 2vh;
+}
+
+.ios p {
+    width: 40%;
+    font-size: 2.1vh;
+}
+
+.ios img {
+    margin-left: -2vh;
+}
+
+.android img {
+    margin-left: 2vh;
+}
+
+.inicio-img {
+    margin-left: -5vh;
+}
+
+button p {
+
+    font-size: 2vh;
+    text-align: left;
+    font-weight: 300;
+}
+
+.android,
+.ios {
+    margin: 10px;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+
+/* FOOTER */
+
+.girassol {
+    margin-top: 20VH;
+}
+
+.rodape {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    margin-top: 7vh;
+    width: 96vh;
+    margin-left: 56vh;
+    justify-content: space-around;
+}
+
+footer {
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+a {
+
+    text-decoration: none;
+    color: #000000;
+}
+
+
+.linha {
+    width: 214vh;
+    margin-top: 8vh;
+    border: none;
+    height: 2px;
+    background-color: #D7D7D7;
+
+}
+
+.ultimo-texto p {
+    margin-top: 10vh;
+    color: #8F8F8F;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 720px) {
+    header {
+        display: none;
+    }
+
+    .carousel {
+        margin-top: 0.1vh;
+    }
+
+    .carousel img {
+        height: 46vh;
+        max-height: 60vh;
+    }
+
+
+
+    .carousel-text3 {
+        font-size: 3vh;
+        color: #ffffff;
+        width: 57vh;
+        margin-top: -26vh;
+        line-height: 4vh;
+
+    }
+
+    .carousel-text2 {
+        font-size: 3vh;
+        color: #ffffff;
+        width: 45vh;
+        margin-top: -26vh;
+        line-height: 5vh;
+    }
+
+    .carousel-text1 {
+        font-size: 4vh;
+        color: #ffffff;
+        width: 50vh;
+        margin-top: -26vh;
+        line-height: 6vh;
+    }
+
+    .texto1 {
+        width: 20vh;
+        font-size: 4vh;
+    }
+
+    .span {
+        font-size: 3vh;
+    }
+
+    .prev,
+    .next {
+        color: #ffffff;
+        left: 30vh;
+        margin-top: -38vh;
+        display: flex;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+        cursor: pointer;
+        padding: 20px;
+        font-size: 50px;
+    }
+
+    .prev, .next{
+        display: none;
+    }
+        
+
+    
+
+    /* FINALIZADO CARROSSEL EM CIMA */
+
+
+
+
+
+
+
+    .titulo-dois {
+        margin-top: -120vh;
+        font-size: 4vh;
+    }
+
+    .importancia {
+        font-size: 3vh;
+    }
+
+    .icones {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        margin-top: 20vh;
+    }
+
+    .icone2,
+    .icone3 {
+        margin-top: 10vh;
+    }
+
+    .texto {
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        margin: 10px 0;
+        line-height: normal;
+    }
+
+    .container-laranja {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    .imagemCrian img {
+        width: 100%;
+        height: auto;
+    }
+
+    .objetivo {
+        width: auto;
+        font-size: 3vh;
+        text-align: center;
+    }
+
+
+
+    /* parte nosso app */
+    .nossoAplicativo {
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .app {
+        margin: 20px 0;
+    }
+
+    .quiz,
+    .chat,
+    .concentracao,
+    .calendario {
+        width: 60%;
+        height: 30vh;
+        margin-top: 10vh;
+    }
+
+
+
+
+    /* abaixar app */
+
+    .container-verde {
+        align-items: center;
+        text-align: center;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        max-width: 100%;
+        height: 250vh;
+
+    } 
+
+    .jogos {
+        margin-top: -25vh;
+        margin-left: 6vh;
+    }
+
+    .inicio-img{
+        margin-top: -5vh;
+    } 
+
+     .box {
+       margin-left: -17vh;
+        align-items: center;
+        text-align: center;
+        margin-top: 30vh;
+    }
+
+    .box h2 {
+        text-align: center;
+        font-size: 5vh;
+    } 
+
+    .boxJuntas {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60vh;
+        
+    } 
+
+     
+
+    .rodape {
+        margin: 0;
+        width: 100%;
+    }
+
+
+    .girassol {
+        margin-top: 30vh;
+    }
+
+    footer {
+        display: flex;
+        font-size: 2;
+        top: 8vh;
+    }
+.ultimo-texto{
+    padding: 0.75vh;
+}
+    .linha {
+        width: 67vh;
+
+        
+    } 
+}
