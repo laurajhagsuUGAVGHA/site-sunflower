@@ -217,18 +217,20 @@
     /*oque é*/
 
     .meio-pagina {
-        width: 1515px;
-        height: 600px;
+        width: 1510px;
+        height: 400px;
         margin-top: 300px;
         background-color: #E8FAF0;
     }
 
-    .meio-pagina h1 {
+    .h1-meio-pagina {
         font-family: 'Poppins';
         font-weight: 100;
         text-align: center;
         align-items: center;
         justify-content: center;
+        padding: 20px;
+
     }
 
     .quebra-cabeca1,
@@ -245,12 +247,80 @@
 
     .texto1 {
         margin-top: -40px;
-        margin-left: 150px;
+        margin-left: 160px;
     }
 
     .quebra-cabeca2 {
         margin-left: 150px;
-        margin-top: 20px;
+        margin-top: 40px;
+    }
+
+    .texto2 {
+        margin-top: -40px;
+        margin-left: 230px;
+    }
+
+    .quebra-cabeca3 {
+        margin-left: 220px;
+        margin-top: 50px;
+    }
+
+    .texto3 {
+        margin-top: -50px;
+        margin-left: 280px;
+    }
+
+    .autismo-escolas img {
+        height: auto;
+        width: 400px;
+        margin-top: 200px;
+    }
+
+    .autismo {
+        font-size: 35px;
+        margin-top: -300px;
+        margin-left: 60px;
+    }
+
+    .bolinha1,
+    .bolinha2,
+    .bolinha3 {
+        border: 2px solid #FED3DA;
+        background-color: #FED3DA;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+
+    }
+
+    .bolinha1 {
+        margin-top: -110px;
+        margin-left: 600px;
+    }
+
+    .texto-1 {
+        margin-left: 650px;
+        margin-top: -22px;
+    }
+
+    .bolinha2 {
+        margin-top: 45px;
+        margin-left: 600px;
+    }
+
+    .texto-2 {
+        margin-left: 650px;
+        margin-top: -20px;
+    }
+
+    .bolinha3 {
+        margin-top: 40px;
+        margin-left: 600px;
+    }
+
+    .texto-3 {
+        margin-left: 650px;
+        margin-top: -22px;
     }
 
     /* FOOTER */
