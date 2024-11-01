@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TEA</title>
     <link rel="stylesheet" href="jogos.css">
+    <link rel="icon" href="assets/girassol.png">
 </head>
 
 <body>
@@ -58,11 +59,11 @@
     <main>
         <!--TEA-->
         <div class="comeco-tea">
-            <img class="tea-coracao" src="assets/coracao-tea.png" alt="coracao-tea">
+            <img class="tea-coracao heart-image" src="assets/coracao-tea.png" alt="coracao-tea">
             <p class="tea">TEA</p>
             <p class="transtorno">(Transtorno do Espectro do Autismo)</p>
-
         </div>
+        
         <!---OQUE É-->
         <div class="meio-pagina">
             <h1 class="h1-meio-pagina">O QUE É?</h1>
@@ -79,7 +80,7 @@
         </div>
         <!--FINAL OQUE É-->
 
-<!--AUTISMO NAS ESCOLAS-->
+        <!--AUTISMO NAS ESCOLAS-->
         <div class="autismo-escolas">
             <img src="assets/circulo-jogos.png" alt="circulo-rosa">
             <p class="autismo">Autismo nas <br> escolas</p>
@@ -91,7 +92,7 @@
             <div class="bolinha3"></div>
             <p class="texto-3">Apoio e Recursos Educacionais</p>
         </div>
-<!--FIM AUTISMO NAS ESCOLAS-->
+        <!--FIM AUTISMO NAS ESCOLAS-->
 
         <div class="final">
             <img src="assets/linha1-jogos.png" alt="" class="linha1">
@@ -100,8 +101,58 @@
             <p class="p-doencas">Doenças Invísiveis</p>
         </div>
 
+        <div class="quadrados-container">
+            <div class="quadrado" data-info="Lúpus, Esclerose Múltipla e Artrite Reumatoide: Estas condições causam uma resposta imune anormal e podem provocar dor, fadiga e dificuldades de mobilidade, sem sinais físicos aparentes.
+          " onclick="toggleInfo(this)">Doenças Autoimunes</div>
+            <div class="quadrado"
+                data-info="Depressão, Ansiedade, Transtorno Bipolar e TDAH: Transtornos mentais são exemplos comuns de doenças invisíveis. Muitos sofrem com esses problemas silenciosamente, pois a sociedade nem sempre os compreende ou aceita."
+                onclick="toggleInfo(this)">Transtornos Mentais</div>
+            <div class="quadrado" data-info="Epilepsia, Enxaqueca Crônica e Síndrome de Tourette: Essas doenças afetam o sistema nervoso e podem resultar em sintomas debilitantes, como dores fortes e convulsões, muitas vezes não visíveis no dia a dia.
+            " onclick="toggleInfo(this)">Doenças Neurológicas</div>
+            <div class="quadrado" data-info="Síndrome do Intestino Irritável (SII) e Síndrome da Dor Pélvica: Estes transtornos envolvem dores intensas e constantes que afetam a qualidade de vida.
+        " onclick="toggleInfo(this)">Transtornos de Dor Crônica</div>
+        </div>
 
+        <script>
+            function toggleInfo(element) {
+                // Verifica se já existe um quadrado de informação
+                const existingInfo = element.querySelector('.info');
+                if (existingInfo) {
+                    // Se existir, remove-o
+                    existingInfo.remove();
+                } else {
+                    // Se não existir, cria um novo quadrado de informação
+                    const message = element.getAttribute('data-info');
+                    const infoDiv = document.createElement('div');
+                    infoDiv.className = 'info';
+                    infoDiv.textContent = message;
+                    element.appendChild(infoDiv);
+                }
+            }
+        </script>
     </main>
+    <footer>
+        <div class="girassol">
+            <img src="assets/girassol.png" alt="">
+        </div>
+        <div class="rodape">
+            <a href="#carrossel">Início</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#objetivo">Objetivo</a>
+            <a href="#app">App</a>
+            <a href="tea.html">TEA</a>
+            <a href="jogos.css">Jogos</a>
+            <a href="#baixe">Baixe</a>
+
+      </div>
+            
+
+        <div class="linha"> </div>
+        <div class="ultimo-texto">
+            <p>Copyright © 2023. Todos os Direitos Reservados.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>

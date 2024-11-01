@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coração Pulsante com Imagem</title>
+    <style>
+        /* Estilos do corpo */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        /* Coração pulsante */
+        .heart-image {
+            width: 150px; /* Ajuste o tamanho conforme necessário */
+            animation: pulse 2s infinite; /* Ajuste a duração para 2s para uma pulsação mais lenta */
+        }
+
+        /* Animação de pulsação */
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Adicione o caminho da imagem de coração abaixo -->
+    <img src="assets/coracao-tea.png" alt="Coração" class="heart-image">
+</body>
+</html>
