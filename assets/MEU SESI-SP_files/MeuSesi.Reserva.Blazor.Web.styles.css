@@ -1,0 +1,340 @@
+/* _content/MeuSesi.Reserva.Blazor.Web/Pages/Fila.razor.rz.scp.css */
+
+
+.lds-facebook[b-u7mx5uwxa0] {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+
+    .lds-facebook div[b-u7mx5uwxa0] {
+        display: inline-block;
+        position: absolute;
+        left: 8px;
+        width: 16px;
+        background: #b4224f;
+        animation: lds-facebook-b-u7mx5uwxa0 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+    }
+
+        .lds-facebook div:nth-child(1)[b-u7mx5uwxa0] {
+            left: 8px;
+            animation-delay: -0.24s;
+            background: #b8335b;
+        }
+
+        .lds-facebook div:nth-child(2)[b-u7mx5uwxa0] {
+            left: 32px;
+            animation-delay: -0.12s;
+            background: #b23365;
+        }
+
+        .lds-facebook div:nth-child(3)[b-u7mx5uwxa0] {
+            left: 56px;
+            animation-delay: 0;
+            background: #aa3376;
+        }
+
+@keyframes lds-facebook-b-u7mx5uwxa0 {
+    0% {
+        top: 8px;
+        height: 64px;
+    }
+
+    50%, 100% {
+        top: 24px;
+        height: 32px;
+    }
+}
+/* _content/MeuSesi.Reserva.Blazor.Web/Pages/Index.razor.rz.scp.css */
+.rounded-nav-top[b-rl9eqxe8ni] {
+    border-top-left-radius: 1rem !important;
+    border-top-right-radius: 1rem !important;
+}
+/* _content/MeuSesi.Reserva.Blazor.Web/Pages/Reserva.razor.rz.scp.css */
+input:focus-visible[b-fs0f5fp74b] {
+    outline: 0;
+}
+/* _content/MeuSesi.Reserva.Blazor.Web/Pages/ReservaSetorizacao.razor.rz.scp.css */
+input:focus-visible[b-p2l8as7eq9] {
+    outline: 0;
+}
+
+.blazored-modal-content[b-p2l8as7eq9] {
+    height: 300px;
+    overflow-y: auto;
+}
+
+.card-body[b-p2l8as7eq9]{
+    border:1px;
+    font-weight:20px;
+}
+/* _content/MeuSesi.Reserva.Blazor.Web/Shared/Components/Ingresso/IngressoPrint.razor.rz.scp.css */
+@page {
+    size: auto;
+    margin: 0mm;
+}
+
+.ticket-container[b-8dliulwjrq] {
+    width: 90%;
+    border: 2px solid;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    page-break-after: always;
+}
+
+.image-container[b-8dliulwjrq] {
+    width: 80%;
+}
+
+.ticket-nome[b-8dliulwjrq] {
+    margin-top: 40px;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.ticket-class-title[b-8dliulwjrq] {
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.ticket-class-label[b-8dliulwjrq] {
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.ticket-class-subtitle[b-8dliulwjrq] {
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.ticket-qr-code[b-8dliulwjrq] {
+    width: 80%;
+}
+/* _content/MeuSesi.Reserva.Blazor.Web/Shared/Components/Loading.razor.rz.scp.css */
+/* _content/MeuSesi.Reserva.Blazor.Web/Shared/Components/Mapa/Mapa.razor.rz.scp.css */
+td[b-0e33i9k57p] {
+    min-width: 50px;
+    max-width: 50px;
+    height: 50px;
+}
+/* _content/MeuSesi.Reserva.Blazor.Web/Shared/Components/Reserva/ReservaPager.razor.rz.scp.css */
+.page-item[b-q5adbqsg9w] {
+    cursor: pointer;
+}
+/* _content/MeuSesi.Reserva.Blazor.Web/Shared/Components/Toast.razor.rz.scp.css */
+.toast[b-m7ilhxf0ap] {
+    display: none;
+    padding: .7rem;
+    color: #fff;
+    z-index: 9999;
+    position: absolute;
+    border-radius: 1rem;
+    top: -18vh;
+}
+
+.toast-icon[b-m7ilhxf0ap] {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 1rem;
+    font-size: 2rem;
+}
+
+.toast-body[b-m7ilhxf0ap] {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding-left: 1rem;
+}
+
+    .toast-body p[b-m7ilhxf0ap] {
+        margin-bottom: 0;
+    }
+
+.toast-visible[b-m7ilhxf0ap] {
+    display: flex;
+    flex-direction: row;
+    opacity: 1 !important;
+}
+
+@keyframes fadein-b-m7ilhxf0ap {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+/* _content/MeuSesi.Reserva.Blazor.Web/Shared/Components/Tooltip.razor.rz.scp.css */
+.tooltip-wrapper[b-xq2tivz16m] {
+    position: relative;
+    display: inline-block;
+}
+
+span[b-xq2tivz16m] {
+    visibility: hidden;
+    position: absolute;
+    width: 120px;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+    background-color: #363636;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    z-index: 1;
+}
+
+    span[b-xq2tivz16m]::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #555 transparent transparent transparent;
+    }
+
+.tooltip-wrapper:hover span[b-xq2tivz16m] {
+    visibility: visible;
+}
+/* _content/MeuSesi.Reserva.Blazor.Web/Shared/MainLayout.razor.rz.scp.css */
+.page[b-jglyv4u421] {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+main[b-jglyv4u421] {
+    flex: 1;
+}
+
+.sidebar[b-jglyv4u421] {
+    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+}
+
+.top-row[b-jglyv4u421] {
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #d6d5d5;
+    justify-content: flex-end;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+}
+
+    .top-row[b-jglyv4u421]  a, .top-row .btn-link[b-jglyv4u421] {
+        white-space: nowrap;
+        margin-left: 1.5rem;
+    }
+
+    .top-row a:first-child[b-jglyv4u421] {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+@media (max-width: 640.98px) {
+    .top-row:not(.auth)[b-jglyv4u421] {
+        display: none;
+    }
+
+    .top-row.auth[b-jglyv4u421] {
+        justify-content: space-between;
+    }
+
+    .top-row a[b-jglyv4u421], .top-row .btn-link[b-jglyv4u421] {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 641px) {
+    .page[b-jglyv4u421] {
+        flex-direction: row;
+    }
+
+    .sidebar[b-jglyv4u421] {
+        width: 250px;
+        height: 100vh;
+        position: sticky;
+        top: 0;
+    }
+
+    .top-row[b-jglyv4u421] {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+
+    .top-row[b-jglyv4u421], article[b-jglyv4u421] {
+        padding-left: 2rem !important;
+        padding-right: 1.5rem !important;
+    }
+}
+/* _content/MeuSesi.Reserva.Blazor.Web/Shared/NavMenu.razor.rz.scp.css */
+.navbar-toggler[b-29w1kdorin] {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.top-row[b-29w1kdorin] {
+    height: 3.5rem;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.navbar-brand[b-29w1kdorin] {
+    font-size: 1.1rem;
+}
+
+.oi[b-29w1kdorin] {
+    width: 2rem;
+    font-size: 1.1rem;
+    vertical-align: text-top;
+    top: -2px;
+}
+
+.nav-item[b-29w1kdorin] {
+    font-size: 0.9rem;
+    padding-bottom: 0.5rem;
+}
+
+    .nav-item:first-of-type[b-29w1kdorin] {
+        padding-top: 1rem;
+    }
+
+    .nav-item:last-of-type[b-29w1kdorin] {
+        padding-bottom: 1rem;
+    }
+
+    .nav-item[b-29w1kdorin]  a {
+        color: #d7d7d7;
+        border-radius: 4px;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        line-height: 3rem;
+    }
+
+.nav-item[b-29w1kdorin]  a.active {
+    background-color: rgba(255,255,255,0.25);
+    color: white;
+}
+
+.nav-item[b-29w1kdorin]  a:hover {
+    background-color: rgba(255,255,255,0.1);
+    color: white;
+}
+
+@media (min-width: 641px) {
+    .navbar-toggler[b-29w1kdorin] {
+        display: none;
+    }
+
+    .collapse[b-29w1kdorin] {
+        /* Never collapse the sidebar for wide screens */
+        display: block;
+    }
+}

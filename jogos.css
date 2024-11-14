@@ -136,7 +136,15 @@
 
 
     }
-
+.button-palavra{
+    border: 2px solid #7ac9d0;
+        width: 120px;
+        height: 30px;
+        border-radius: 20px;
+        background-color: #7ac9d0;
+        margin-left: 350px;
+        margin-top: 20px;
+}
     .button-quiz {
         border: 2px solid #FED3DA;
         width: 120px;
@@ -214,21 +222,27 @@
         height: auto;
         margin-left: 110vh;
     }
-  /* Coração pulsante */
-  .heart-image {
-     /* Ajuste o tamanho conforme necessário */
-    animation: pulse 4s infinite; /* Ajuste a duração para 2s para uma pulsação mais lenta */
-}
 
-/* Animação de pulsação */
-@keyframes pulse {
-    0%, 100% {
-        transform: scale(1);
+    /* Coração pulsante */
+    .heart-image {
+        /* Ajuste o tamanho conforme necessário */
+        animation: pulse 4s infinite;
+        /* Ajuste a duração para 2s para uma pulsação mais lenta */
     }
-    50% {
-        transform: scale(1.1);
+
+    /* Animação de pulsação */
+    @keyframes pulse {
+
+        0%,
+        100% {
+            transform: scale(1);
+        }
+
+        50% {
+            transform: scale(1.1);
+        }
     }
-}
+
     /*oque é*/
 
     .meio-pagina {
@@ -284,7 +298,8 @@
         margin-top: -50px;
         margin-left: 280px;
     }
-/*autismo nas escolas*/
+
+    /*autismo nas escolas*/
     .autismo-escolas img {
         height: auto;
         width: 400px;
@@ -322,7 +337,7 @@
     .bolinha2 {
         margin-top: 45px;
         margin-left: 600px;
-   
+
     }
 
     .texto-2 {
@@ -360,18 +375,18 @@
         width: 10%;
     }
 
-    .p-doencas{
+    .p-doencas {
         font-size: 25px;
         font-family: 'Poppins';
         font-weight: 100;
     }
-    
-    
+
+
     .quadrados-container {
         display: flex;
         justify-content: space-around;
         width: 100%;
-margin-top: 80px;
+        margin-top: 80px;
     }
 
     .quadrado {
@@ -391,19 +406,25 @@ margin-top: 80px;
         text-align: center;
         justify-content: center;
         font-family: 'Poppins';
-        transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s; /* Adicionando transições */
-            position: relative;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Efeito de relevo */
+        transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+        /* Adicionando transições */
+        position: relative;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        /* Efeito de relevo */
     }
+
     .quadrado:hover {
         background-color: #ffbf405b;
-        transform: translateY(-2px); /* Leve movimento para cima ao passar o mouse */
-        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombras mais intensas ao passar o mouse */
+        transform: translateY(-2px);
+        /* Leve movimento para cima ao passar o mouse */
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        /* Sombras mais intensas ao passar o mouse */
     }
 
     .info {
         position: absolute;
-        top: -50px; /* Posiciona acima do quadrado */
+        top: -50px;
+        /* Posiciona acima do quadrado */
         left: 50%;
         transform: translateX(-50%);
         width: 300px;
@@ -416,8 +437,10 @@ margin-top: 80px;
         justify-content: center;
         align-items: center;
         font-size: 16px;
-        z-index: 1; /* Certifica-se de que o quadrado informativo esteja acima */
+        z-index: 1;
+        /* Certifica-se de que o quadrado informativo esteja acima */
     }
+
     /* FOOTER */
 
     .girassol {
@@ -461,6 +484,6 @@ margin-top: 80px;
         margin-top: 10vh;
         color: #8F8F8F;
     }
-    @media (max-width: 720px) {
-      
-    }
+    
+
+  
