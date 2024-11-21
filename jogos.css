@@ -33,7 +33,7 @@
         /* Garante que o cabeçalho fique acima de outros elementos */
         padding: 10px 0;
     }
-
+    
     .container {
         display: flex;
         height: 19vh;
@@ -42,48 +42,112 @@
         background-color: #FFF;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.396);
     }
-
+    
     /* ESSA É A PARTE DE LOGO E TITULO SUNFLOWER */
     .logo-titulo {
         display: flex;
         margin-top: 2vh;
     }
-
+    
     .imagem {
         max-width: 50%;
     }
-
+    
     .imagem img {
         width: 50%;
         margin-left: 5vh;
-
+    
     }
-
+    
     .titulo {
         margin-top: 2.1vh;
         margin-left: 1vh;
         font-family: Belleza;
         font-weight: 300;
         font-size: 25px;
-
+    
     }
-
+    
     /* ESSA É A PARTE DE INICIO SOBRE ...... */
     #navegacao {
         display: flex;
         margin: 4vh;
         margin-top: 6vh;
-
+    
     }
-
+    
     #navegacao h3 {
         font-family: poppins;
         font-weight: 300;
     }
-
+    
     #navegacao div {
         margin: 5vh;
         cursor: pointer;
+    }
+    
+    .menu-icon {
+        font-size: 30px;
+        cursor: pointer;
+        color: #333;
+        display: none;
+    }
+    
+    .modal {
+        display: none;
+        /* Oculta o modal inicialmente */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 1000;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .modal-content {
+        background-color: #fff;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        text-align: center;
+        position: relative;
+    }
+    
+    .close-btn {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        font-size: 40px;
+        color: #333;
+        cursor: pointer;
+    }
+    
+    .modal ul {
+        list-style: none;
+        padding: 0;
+        text-align: left;
+        margin: 50px 30px;
+    }
+    
+    .modal ul li {
+        margin: 18px 0;
+    }
+    
+    .modal ul li a {
+        text-decoration: none;
+        color: #000;
+        font-size: 18px;
+    }
+    
+    .logoModal img{
+        width: 85px;
+    }
+    
+    .logoModal{
+        margin-top: 40px;
     }
 
     /*JOGOS EDUCACIONAIS*/
@@ -485,5 +549,32 @@
         color: #8F8F8F;
     }
     
-
+    @media (max-width: 720px) {
+        .menu-icon {
+            display: block;
+            margin: 2vh 5vh 0 0;
+        }
+    
+        .imagem img {
+            width: 40%;
+        }
+    
+        .container {
+            height: 16vh;
+        }
+    
+        .logo-titulo {
+            display: flex;
+            align-items: center;
+        }
+    
+        .titulo {
+            margin: 0;
+        }
+    
+        #navegacao {
+            display: none;
+            /* Oculta a navegação no mobile */
+        }
+    }
   
