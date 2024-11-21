@@ -1,3 +1,4 @@
+
 let slideIndex = 0;
 showSlide(slideIndex);
 
@@ -27,6 +28,11 @@ function nextSlide() {
     showSlide(slideIndex += 1);
 }
 
+function toggleModal() {
+    const modal = document.getElementById('modal');
+    modal.style.display = modal.style.display === 'flex' ? 'none' : 'flex';
+  }
+  
 
 
 
