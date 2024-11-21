@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Memória</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" href="img/logo.png">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #FFD5BC;
+            font-family: Arial, sans-serif;
+        }
+
+        .jogo-memoria {
+            display: grid;
+            flex-wrap: wrap;
+            grid-template-columns: repeat(7, 100px);
+            grid-gap: 10px;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+        }
+
+
+
+        .carta-memoria {
+            width: 100px;
+            height: 100px;
+            background-color: #FFB284;
+            border-radius: 10px;
+            cursor: pointer;
+            position: relative;
+        }
+
+        /* Estilo para a imagem da carta virada */
+        .carta-memoria img {
+            width: 100%;
+            border-radius: 10px;
+            object-fit: cover;
+            /* Assegura que a imagem da carta se ajuste sem distorcer */
+            display: none;
+        }
+
+        /* Estilo específico para a imagem de fundo da carta */
+        .carta-memoria .fundo {
+            margin-top: 3vh;
+            margin-left: 3vh;
+            width: auto;
+            /* Deixa a imagem de fundo com seu tamanho original */
+            height: auto;
+            /* Não define um tamanho específico para a altura */
+            display: block;
+            border-radius: 10px;
+        }
+
+
+
+        .carta-memoria .fundo {
+
+            display: block;
+        }
+
+        .carta-memoria.virada .fundo {
+            display: none;
+        }
+
+        .carta-memoria.virada img {
+            display: block;
+        }
+
+        .temporizador {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            align-items: center;
+            background-color: #FF8237;
+            width: 18vh;
+            justify-content: center;
+            height: 9vh;
+            border-radius: 5px;
+            font-size: 20px;
+        }
+
+        #tempo {
+            margin-left: 0.75vh;
+        }
+
+        .temporizador .material-icons,
+        #tempo {
+            margin-right: 5px;
+            color: aliceblue;
+        }
+
+        /* Botão de seta para voltar */
+        .voltar {
+            position: absolute;
+            align-items: center;
+            justify-content: center;
+            top: 20px;
+            width: 7vh;
+            height: 6vh;
+            border-radius: 2px;
+            left: 20px;
+            background-color: #FFB284;
+            cursor: pointer;
+            color: #FFF;
+        }
+
+        #voltar {
+            font-size: 46px;
+        }
+
+        /* Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #FF8237;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .conteudo-modal {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .conteudo-modal button {
+            margin: 10px;
+            padding: 10px 20px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #FF8237;
+            color: white;
+        }
+
+        @media (max-width: 700px) {
+            #jogo-memoria {
+                margin-top: 60vh;
+                flex-wrap: wrap;
+            }
+
+            .jogo-memoria {
+                display: flex;
+                flex-wrap: wrap;
+                grid-template-columns: repeat(4, 100px);
+                grid-gap: 10px;
+                justify-content: center;
+                align-items: center;
+                margin-top: 50px;
+            } 
+            .carta-memoria {
+                width: 90px;
+                height: 90px;
+                background-color: #FFB284;
+                border-radius: 10px;
+                cursor: pointer;
+                position: relative;
+               
+            }
+        }
+           
+
+           
+    </style>
+</head>
+
+<body>
+    <div class="voltar">
+        <span class="material-icons" id="voltar">arrow_back</span>
+    </div>
+
+    <div class="temporizador">
+        <span class="material-icons">alarm</span>
+        <span id="tempo">0s</span>
+    </div>
+
+    <div class="jogo-memoria" id="jogo-memoria">
+        <!-- As cartas serão geradas dinamicamente -->
+    </div>
+
+    <!-- Modal -->
+    <div class="modal" id="modalVitoria">
+        <div class="conteudo-modal">
+            <h2>Parabéns! Você completou o jogo em <span id="tempo-final"></span></h2>
+            <button id="jogar-novamente">Jogar Novamente</button>
+            <button id="voltar-inicio">Voltar ao Início</button>
+        </div>
+    </div>
+
+    <script>
+        const imagens = [
+            "img1.png", "img2.png", "img3.png", "img4.png", "img5.png", "img6.png", "img7.png",
+            "img8.png", "img9.png", "img10.png", "img11.png", "img12.png", "img13.png", "img14.png"
+        ];
+
+        // Duplicar as imagens para ter pares
+        let cartas = [...imagens, ...imagens];
+
+        // Embaralhar as cartas
+        cartas = cartas.sort(() => Math.random() - 0.5);
+
+        // Selecionar o tabuleiro
+        const tabuleiro = document.getElementById('jogo-memoria');
+
+        // Gerar as cartas no tabuleiro
+        cartas.forEach((imagem) => {
+            const carta = document.createElement('div');
+            carta.classList.add('carta-memoria');
+            carta.setAttribute('data-carta', imagem);
+
+            const img = document.createElement('img');
+            img.src = `img/${imagem}`;
+            img.alt = imagem;
+
+            const fundo = document.createElement('img');
+            fundo.src = 'img/fundoJogoDaMemoria.png';
+            fundo.alt = 'Fundo da carta';
+            fundo.classList.add('fundo');
+
+            carta.appendChild(fundo);
+            carta.appendChild(img);
+            tabuleiro.appendChild(carta);
+
+            carta.addEventListener('click', virarCarta);
+        });
+
+        let cartaVirada = false;
+        let primeiraCarta, segundaCarta;
+        let bloquearTabuleiro = false;
+        let combinacoes = 0;
+        let tempoDecorrido = 0;
+        let intervalo;
+        let cronometroIniciado = false; // Variável para controlar se o cronômetro já foi iniciado
+
+        // Temporizador
+        function iniciarCronometro() {
+            if (!cronometroIniciado) { // Iniciar cronômetro apenas se não estiver iniciado
+                intervalo = setInterval(() => {
+                    tempoDecorrido++;
+                    document.getElementById('tempo').innerText = `${tempoDecorrido}s`;
+                }, 1000);
+                cronometroIniciado = true; // Marcar que o cronômetro foi iniciado
+            }
+        }
+
+        function pararTemporizador() {
+            clearInterval(intervalo);
+        }
+
+        function virarCarta() {
+            if (bloquearTabuleiro) return;
+            if (this === primeiraCarta) return;
+
+            this.classList.add('virada');
+
+            if (!cartaVirada) {
+                // Primeira carta virada
+                cartaVirada = true;
+                primeiraCarta = this;
+                iniciarCronometro(); // Iniciar temporizador ao virar a primeira carta
+            } else {
+                // Segunda carta virada
+                segundaCarta = this;
+                verificarCombinacao();
+            }
+        }
+
+        function verificarCombinacao() {
+            let combinacao = primeiraCarta.dataset.carta === segundaCarta.dataset.carta;
+            combinacao ? desativarCartas() : desvirarCartas();
+        }
+
+        function desativarCartas() {
+            primeiraCarta.removeEventListener('click', virarCarta);
+            segundaCarta.removeEventListener('click', virarCarta);
+
+            combinacoes++;
+            if (combinacoes === 14) finalizarJogo(); // Verifica se todas as combinações foram feitas
+
+            resetarTabuleiro();
+        }
+
+        function desvirarCartas() {
+            bloquearTabuleiro = true;
+            setTimeout(() => {
+                primeiraCarta.classList.remove('virada');
+                segundaCarta.classList.remove('virada');
+                resetarTabuleiro();
+            }, 1500);
+        }
+
+        function resetarTabuleiro() {
+            [cartaVirada, bloquearTabuleiro] = [false, false];
+            [primeiraCarta, segundaCarta] = [null, null];
+        }
+
+        function finalizarJogo() {
+            pararTemporizador(); // Para o temporizador ao finalizar o jogo
+            document.getElementById('tempo-final').innerText = `${tempoDecorrido}s`;
+            document.getElementById('modalVitoria').style.display = 'flex';
+        }
+
+        // Reiniciar o jogo
+        document.getElementById('jogar-novamente').addEventListener('click', () => {
+            location.reload(); // Recarrega a página para reiniciar o jogo
+        });
+
+        // Voltar ao início
+        document.getElementById('voltar-inicio').addEventListener('click', () => {
+            window.location.href = 'inicioJogo.html'; // Redireciona para a página inicial
+        });
+
+        // Ação ao clicar na seta de voltar
+        document.getElementById('voltar').addEventListener('click', () => {
+            window.location.href = 'inicioJogo.html'; // Modifique o link conforme necessário
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,950 @@
+{
+    "geografia": [
+        {
+            "pergunta": "Qual é o maior continente do mundo?",
+            "alternativas": [
+                "África",
+                "Ásia",
+                "América do Norte",
+                "Antártida",
+                "Europa"
+            ],
+             "resposta": 1,
+            "imagem": "continente.png"
+        },
+        {
+            "pergunta": "Qual é a capital da França?",
+            "alternativas": [
+                "Berlim",
+                "Madrid",
+                "Paris",
+                "Lisboa",
+                "Roma"
+            ],
+            "resposta": 2,
+            "imagem": "franca.png"
+        },
+        {
+            "pergunta": "Qual país tem a maior população do mundo?",
+            "alternativas": [
+                "Índia",
+                "Estados Unidos",
+                "China",
+                "Brasil",
+                "Rússia"
+            ],
+            "resposta": 2,
+            "imagem": "populacao.png"
+        },
+        {
+            "pergunta": "Qual é o maior deserto do mundo?",
+            "alternativas": [
+                "Sahara",
+                "Gobi",
+                "Kalahari",
+                "Ártico",
+                "Antártico"
+            ],
+            "resposta": 0,
+            "imagem": "deserto.png"
+        },
+        {
+            "pergunta": "Qual é a capital do Brasil?",
+            "alternativas": [
+                "São Paulo",
+                "Brasília",
+                "Rio de Janeiro",
+                "Salvador",
+                "Fortaleza"
+            ],
+            "resposta": 1,
+            "imagem": "saoPaulo.png"
+        },
+        {
+            "pergunta": "Em que continente fica a Austrália?",
+            "alternativas": [
+                "África",
+                "América",
+                "Ásia",
+                "Oceania",
+                "Europa"
+            ],
+            "resposta": 3,
+            "imagem": "oceania.png"
+        },
+        {
+            "pergunta": "Qual é o rio mais longo do mundo?",
+            "alternativas": [
+                "Nilo",
+                "Amazonas",
+                "Yangtze",
+                "Mississippi",
+                "Ganges"
+            ],
+            "resposta": 0,
+            "imagem": "rioNilo.png"
+        },
+        {
+            "pergunta": "Qual país é conhecido como a terra do sol nascente?",
+            "alternativas": [
+                "China",
+                "Japão",
+                "Coreia do Sul",
+                "Tailândia",
+                "Vietnã"
+            ],
+            "resposta": 1,
+            "imagem": "solJapao.png"
+        },
+        {
+            "pergunta": "Qual é a montanha mais alta do mundo?",
+            "alternativas": [
+                "K2",
+                "Kangchenjunga",
+                "Makalu",
+                "Everest",
+                "Lhotse"
+            ],
+            "resposta": 3,
+            "imagem": "monteEvereste.png"
+        },
+        {
+            "pergunta": "Qual é a capital da Itália?",
+            "alternativas": [
+                "Milão",
+                "Roma",
+                "Nápoles",
+                "Florença",
+                "Turim"
+            ],
+            "resposta": 1,
+            "imagem": "roma.png"
+        },
+        {
+            "pergunta": "Qual é o menor país do mundo?",
+            "alternativas": [
+                "Mônaco",
+                "Vaticano",
+                "San Marino",
+                "Nauru",
+                "Malta"
+            ],
+            "resposta": 1,
+            "imagem": "vaticano.png"
+        },
+        {
+            "pergunta": "Qual é a língua oficial do Brasil?",
+            "alternativas": [
+                "Espanhol",
+                "Inglês",
+                "Francês",
+                "Português",
+                "Italiano"
+            ],
+            "resposta": 3,
+            "imagem": "portugues.png"
+        },
+        {
+            "pergunta": "Qual é a maior floresta tropical do mundo?",
+            "alternativas": [
+                "Floresta Amazônica",
+                "Floresta do Congo",
+                "Floresta da Nova Guiné",
+                "Floresta Boreal",
+                "Floresta Atlântica"
+            ],
+            "resposta": 0,
+            "imagem": "floresta.png"
+        },
+        {
+            "pergunta": "Qual cidade é conhecida como a Big Apple?",
+            "alternativas": [
+                "Los Angeles",
+                "Chicago",
+                "Miami",
+                "Nova Iorque",
+                "Las Vegas"
+            ],
+            "resposta": 3,
+            "imagem": "novaIorque.png"
+        },
+        {
+            "pergunta": "Qual é o maior oceano do mundo?",
+            "alternativas": [
+                "Atlântico",
+                "Índico",
+                "Ártico",
+                "Pacífico",
+                "Antártico"
+            ],
+            "resposta": 3,
+            "imagem": "oceano.png"
+        },
+        {
+            "pergunta": "Qual é a capital da Rússia?",
+            "alternativas": [
+                "Moscovo",
+                "São Petersburgo",
+                "Kiev",
+                "Minque",
+                "Tashkent"
+            ],
+            "resposta": 0,
+            "imagem": "capitalRussia.png"
+        }
+    ],
+    "historia": [
+        {
+            "pergunta": "Qual foi a primeira civilização?",
+            "alternativas": [
+                "Egípcia",
+                "Suméria",
+                "Grega",
+                "Romana",
+                "Chinesa"
+            ],
+            "resposta": 1,
+            "imagem": "sumeria.png"
+        },
+        {
+            "pergunta": "Em que ano começou a Segunda Guerra Mundial?",
+            "imagem": "segundaGuerra.png",
+            "alternativas": [
+                "1937",
+                "1938",
+                "1939",
+                "1940",
+                "1941"
+            ],
+            "resposta": 2
+        },
+        {
+            "pergunta": "Qual foi a civilização que construiu as pirâmides de Gizé?",
+            "imagem": "piramides.png",
+            "alternativas": [
+                "Maias",
+                "Astecas",
+                "Incas",
+                "Egípcios",
+                "Babilônios"
+            ],
+            "resposta": 3
+        },
+        {
+            "pergunta": "Quem descobriu o Brasil em 1500?",
+            "imagem": "descobrimentoBrasil.png",
+            "alternativas": [
+                "Cristóvão Colombo",
+                "Fernão de Magalhães",
+                "Pedro Álvares Cabral",
+                "Vasco da Gama",
+                "Amerigo Vespucci"
+            ],
+            "resposta": 2
+        },
+        {
+            "pergunta": "Quem foi o primeiro presidente do Brasil?",
+            "imagem": "deodoroFonseca.png",
+            "alternativas": [
+                "Getúlio Vargas",
+                "Juscelino Kubitschek",
+                "Deodoro da Fonseca",
+                "Pedro II",
+                "Floriano Peixoto"
+            ],
+            "resposta": 2
+        },
+        {
+            "pergunta": "Qual país europeu colonizou o Brasil?",
+            "imagem": "colonizacaoBrasil.png",
+            "alternativas": [
+                "Inglaterra",
+                "França",
+                "Espanha",
+                "Portugal",
+                "Holanda"
+            ],
+            "resposta": 3
+        },
+        {
+            "pergunta": "Qual cidade foi a primeira capital do Brasil?",
+            "imagem": "primeiraCapital.png",
+            "alternativas": [
+                "Rio de Janeiro",
+                "São Paulo",
+                "Brasília",
+                "Salvador",
+                "Recife"
+            ],
+            "resposta": 3
+        },
+        {
+            "pergunta": "Qual dos seguintes eventos resultou na independência dos EUA?",
+            "imagem": "independenciaEua.png",
+            "alternativas": [
+                "Guerra dos Cem Anos",
+                "Guerra Civil Americana",
+                "Guerra da Secessão",
+                "Guerra de Independência dos EUA",
+                "Revolução Gloriosa"
+            ],
+            "resposta": 3
+        },
+        {
+            "pergunta": "Onde ocorreram os Jogos Olímpicos de 1896, os primeiros da era moderna?",
+            "imagem": "olimpiadas1896.png",
+            "alternativas": [
+                "Roma",
+                "Paris",
+                "Londres",
+                "Atenas",
+                "Amsterdã"
+            ],
+            "resposta": 3
+        },
+        {
+            "pergunta": "Em que ano o homem pisou na Lua pela primeira vez?",
+            "imagem": "homemLua.png",
+            "alternativas": [
+                "1967",
+                "1968",
+                "1969",
+                "1970",
+                "1971"
+            ],
+            "resposta": 2
+        },
+        {
+            "pergunta": "Qual foi a principal motivação para as Cruzadas?",
+            "imagem": "cruzadas.png",
+            "alternativas": [
+                "Colonizar a América",
+                "Recuperar Jerusalém",
+                "Expandir o Império Romano",
+                "Expandir o Cristianismo para a Ásia",
+                "Combater o protestantismo"
+            ],
+            "resposta": 1
+        },
+        {
+            "pergunta": "Em que ano ocorreu a Proclamação da Independência do Brasil?",
+            "imagem": "independencia.png",
+            "alternativas": [
+                "1822",
+                "1889",
+                "1500",
+                "1930",
+                "1750"
+            ],
+            "resposta": 0
+        },
+        {
+            "pergunta": "Qual país foi o primeiro a abolir a escravidão?",
+            "imagem": "abolicao.png",
+            "alternativas": [
+                "Brasil",
+                "França",
+                "Estados Unidos",
+                "Reino Unido",
+                "Haiti"
+            ],
+            "resposta": 4
+        },
+        {
+            "pergunta": "Quem foi o responsável pela construção do Muro de Berlim?",
+            "imagem": "muroBerlim.png",
+            "alternativas": [
+                "União Soviética",
+                "Alemanha Ocidental",
+                "Reino Unido",
+                "Estados Unidos",
+                "França"
+            ],
+            "resposta": 0
+        },
+        {
+            "pergunta": "Quem foi o líder político que iniciou a Revolução Cubana?",
+            "imagem": "revolucaoCubana.png",
+            "alternativas": [
+                "Ernesto Che Guevara",
+                "Fidel Castro",
+                "Nicolás Maduro",
+                "Hugo Chávez",
+                "Juan Perón"
+            ],
+            "resposta": 1
+        }
+    ],
+    "biologia": [
+        {
+            "pergunta": "Qual molécula transporta oxigênio no sangue?",
+            "imagem": "hemoglobina.png",
+            "alternativas": [
+                "Hemoglobina",
+                "Insulina",
+                "Glucagon",
+                "Mioglobina",
+                "Plasma"
+            ],
+            "resposta": 0
+        },
+        {
+            "pergunta": "Qual órgão produz insulina no corpo?",
+            "imagem": "pancreas.png",
+            "alternativas": [
+                "Estômago",
+                "Fígado",
+                "Pâncreas",
+                "Intestino",
+                "Baço"
+            ],
+            "resposta": 2
+        },
+        {
+            "pergunta": "Qual é a unidade básica da vida?",
+            "imagem": "celula.png",
+            "alternativas": [
+                "Molécula",
+                "Célula",
+                "Átomo",
+                "Tecido",
+                "Órgão"
+            ],
+            "resposta": 1
+        },
+        {
+            "pergunta": "O que é fotossíntese?",
+            "imagem": "fotossintese.png",
+            "alternativas": [
+                "Processo de absorção de oxigênio",
+                "Respiração celular",
+                "Produção de glicose a partir de luz",
+                "Digestão de alimentos",
+                "Transporte de nutrientes"
+            ],
+            "resposta": 2
+        },
+        {
+            "pergunta": "Qual é o reino dos fungos?",
+            "imagem": "fungos.png",
+            "alternativas": [
+                "Animalia",
+                "Plantae",
+                "Fungi",
+                "Protista",
+                "Monera"
+            ],
+            "resposta": 2
+        },
+        {
+            "pergunta": "Como é chamado o processo de divisão celular em células somáticas?",
+            "imagem": "mitose.png",
+            "alternativas": [
+                "Meiose",
+                "Mitose",
+                "Bipartição",
+                "Conjugação",
+                "Cissiparidade"
+            ],
+            "resposta": 1
+        },
+        {
+            "pergunta": "Em qual parte da célula ocorre a respiração celular?",
+            "imagem": "mitocondria.png",
+            "alternativas": [
+                "Cloroplasto",
+                "Citoplasma",
+                "Membrana plasmática",
+                "Mitocôndria",
+                "Núcleo"
+            ],
+            "resposta": 3
+        },
+        {
+            "pergunta": "Qual parte da planta faz fotossíntese?",
+            "imagem": "cloroplasto.png",
+            "alternativas": [
+                "Clorofila",
+                "Estômato",
+                "Vacúolo",
+                "Cloroplasto",
+                "Mitocôndria"
+            ],
+            "resposta": 3
+        },
+        {
+            "pergunta": "Qual processo é fundamental para a evolução das espécies?",
+            "imagem": "evolucao.png",
+            "alternativas": [
+                "Mitose",
+                "Mutação",
+                "Cruzamento genético",
+                "Seleção natural",
+                "Migração"
+            ],
+            "resposta": 3
+        },
+        {
+            "pergunta": "Quais são as unidades que compõem as proteínas?",
+            "imagem": "aminoacidos.png",
+            "alternativas": [
+                "Glicose",
+                "Lipídios",
+                "Aminoácidos",
+                "Ácidos graxos",
+                "Polissacarídeos"
+            ],
+            "resposta": 2
+        },
+        {
+            "pergunta": "Qual é o maior órgão do corpo humano?",
+            "imagem": "pele.png",
+            "alternativas": [
+                "Coração",
+                "Fígado",
+                "Pele",
+                "Intestino",
+                "Pulmão"
+            ],
+            "resposta": 2
+        },
+        {
+            "pergunta": "Qual é a fase de crescimento da célula antes da divisão?",
+            "imagem": "celula.png",
+            "alternativas": [
+                "Mitose",
+                "Meiose",
+                "Telófase",
+                "Anáfase",
+                "Interfase"
+            ],
+            "resposta": 4
+        },
+        {
+            "pergunta": "Qual é a função do DNA?",
+            "imagem": "dna.png",
+            "alternativas": [
+                "Produzir proteínas",
+                "Armazenar informações genéticas",
+                "Realizar digestão",
+                "Transportar oxigênio",
+                "Proteger células"
+            ],
+            "resposta": 1
+        },
+        {
+            "pergunta": "Que tipo de sangue é considerado doador universal?",
+            "imagem": "sangue.png",
+            "alternativas": [
+                "Tipo A",
+                "Tipo B",
+                "Tipo AB",
+                "Tipo O",
+                "Tipo AB+"
+            ],
+            "resposta": 3
+        },
+        {
+            "pergunta": "Qual dos seguintes animais é um invertebrado?",
+            "imagem": "invertebrado.png",
+            "alternativas": [
+                "Cobra",
+                "Aranha",
+                "Sapo",
+                "Gato",
+                "Peixe"
+            ],
+            "resposta": 1
+        },
+        {
+            "pergunta": "O que são cromossomos?",
+            "imagem": "cromossomos.png",
+            "alternativas": [
+                "Células",
+                "Genes",
+                "Proteínas",
+                "Estruturas de DNA",
+                "Núcleos"
+            ],
+            "resposta": 3
+        }
+    ],
+    "matematica": [
+        {
+            "pergunta": "Ana tem 10 anos a mais que Pedro e juntos têm 30 anos. Quantos anos tem Pedro?",
+            "imagem": "AnaPedro.png",
+            "alternativas": [
+                "10",
+                "12",
+                "15",
+                "20",
+                "8"
+            ],
+            "resposta": 0
+        },
+        {
+            "pergunta": "Qual é a soma de 8 e 5?",
+            "alternativas": [
+                "10",
+                "12",
+                "13",
+                "14",
+                "15"
+            ],
+            "resposta": 2,
+            "imagem": "soma.png"
+        },
+        {
+            "pergunta": "Quanto é 9 X 8",
+            "imagem": "soma.png",
+            "alternativas": [
+                "73",
+                "45",
+                "22",
+                "72",
+                "71"
+            ],
+            "resposta": 3
+        },
+        {
+            "pergunta": "Quantos segundos há em 1,5 horas?",
+            "imagem": "tempo.png",
+            "alternativas": [
+                "3000",
+                "4000",
+                "5400",
+                "6000",
+                "7200"
+            ],
+            "resposta": 2
+        },
+        {
+            "pergunta": "Se 5x = 20, qual é o valor de x?",
+            "imagem": "soma.png",
+            "alternativas": [
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "resposta": 2
+        },
+        {
+            "pergunta": "Pedro tem o dobro da idade de Maria. Se juntos têm 36 anos, quantos anos tem Pedro?",
+            "imagem": "mariaPedro.png",
+            "alternativas": [
+                "12",
+                "18",
+                "24",
+                "28",
+                "30"
+            ],
+            "resposta": 2
+        },
+        {
+            "pergunta": "Quantos segundos tem meia hora?",
+            "imagem": "tempo.png",
+            "alternativas": [
+                "1200",
+                "1500",
+                "1800",
+                "2100",
+                "2400"
+            ],
+            "resposta": 2
+        },
+        {
+            "pergunta": "Se 3x + 4 = 19, qual é o valor de x?",
+            "imagem": "soma.png",
+            "alternativas": [
+                "3",
+                "4",
+                "5",
+                "6",
+                "7"
+            ],
+            "resposta": 2
+        }
+    ],
+    "portugues": [
+        {
+            "pergunta": "Qual é o sujeito: 'A professora explicou a matéria.'?",
+            "alternativas": [
+                "A professora",
+                "Explicou",
+                "A matéria",
+                "A",
+                "Matéria"
+            ],
+            "resposta": 0,
+            "imagem": "sujeito.png"
+        },
+        {
+            "pergunta": "O que é locução adverbial?",
+            "alternativas": [
+                "Verbo advérbio",
+                "Palavras como advérbio",
+                "Preposição",
+                "Substantivo",
+                "Adjetivo"
+            ],
+            "resposta": 1,
+            "imagem": "locucaoAdverbial.png"
+        },
+        {
+            "pergunta": "Complete: 'ele __________ (falar) sobre o tema.'?",
+            "alternativas": [
+                "Falou",
+                "Fala",
+                "Falará",
+                "Falar",
+                "Falando"
+            ],
+            "resposta": 0,
+            "imagem": "falar.png"
+        },
+        {
+            "pergunta": "Função do predicado?",
+            "alternativas": [
+                "Indicar tempo",
+                "Descrever ação",
+                "Identificar sujeito",
+                "Afirmar fato",
+                "Conectar ideias"
+            ],
+            "resposta": 1,
+            "imagem": "livro.png"
+        },
+        {
+            "pergunta": "Correto: 'houveram' ou 'houve'?",
+            "alternativas": [
+                "Houveram",
+                "Houve",
+                "Houve vários",
+                "Houve um",
+                "Ambos estão corretos"
+            ],
+            "resposta": 1,
+            "imagem": "interrogacao.png"
+        },
+        {
+            "pergunta": "Qual frase tem adjetivo correto?",
+            "alternativas": [
+                "Ele é mais inteligente.",
+                "Ela é mais melhor.",
+                "A casa é bonita.",
+                "O filme é mais interessante.",
+                "Todos são mais feliz."
+            ],
+            "resposta": 0,
+            "imagem": "adjetivo.png"
+        },
+        {
+            "pergunta": "O que é advérbio de modo?",
+            "alternativas": [
+                "Indica lugar",
+                "Indica tempo",
+                "Indica uma ação",
+                "Indica quantidade",
+                "Indica negação"
+            ],
+            "resposta": 2,
+            "imagem": "acao.png"
+        },
+        {
+            "pergunta": "Antônimo de 'rápido'?",
+            "alternativas": [
+                "Devagar",
+                "Lento",
+                "Ágil",
+                "Fácil",
+                "Veloz"
+            ],
+            "resposta": 1,
+            "imagem": "lento.png"
+        },
+        {
+            "pergunta": "Características da oração coordenada?",
+            "alternativas": [
+                "Depende de outra",
+                "Tem sentido completo",
+                "Frase isolada",
+                "Verbo auxiliar",
+                "Não tem verbo"
+            ],
+            "resposta": 1,
+            "imagem": "livro.png"
+        },
+        {
+            "pergunta": "Forma correta: 'mau' ou 'mal'?",
+            "alternativas": [
+                "Mau",
+                "Mal",
+                "Ambos",
+                "Nenhum",
+                "Maus"
+            ],
+            "resposta": 2,
+            "imagem": "mau.png"
+        },
+        {
+            "pergunta": "Diferença entre 'por que' e 'porque'?",
+            "alternativas": [
+                "Por que em perguntas, porque em respostas",
+                "Ambos iguais",
+                "Porque é conjunção",
+                "Por que é preposição",
+                "Nenhum dos dois"
+            ],
+            "resposta": 0,
+            "imagem": "duvida.png"
+        },
+        {
+            "pergunta": "O que é texto narrativo?",
+            "alternativas": [
+                "Conta uma história",
+                "Descreve lugar",
+                "Argumenta",
+                "Informativo",
+                "Poético"
+            ],
+            "resposta": 0,
+            "imagem": "leitura.png"
+        }
+    ],
+    "artes": [
+        {
+            "pergunta": "Qual artista pintou a Mona Lisa?",
+            "alternativas": [
+                "Vincent van Gogh",
+                "Claude Monet",
+                "Leonardo da Vinci",
+                "Pablo Picasso",
+                "Salvador Dalí"
+            ],
+            "resposta": 2,
+            "imagem": "monaLisa.png"
+        },
+        {
+            "pergunta": "Qual movimento artístico é conhecido por suas formas geométricas?",
+            "alternativas": [
+                "Cubismo",
+                "Barroco",
+                "Surrealismo",
+                "Impressionismo",
+                "Renascimento"
+            ],
+            "resposta": 0,
+            "imagem": "cubismo.png"
+        },
+        {
+            "pergunta": "Qual é o nome do famoso teto pintado por Michelangelo na Itália?",
+            "alternativas": [
+                "Catedral de Notre-Dame",
+                "Basílica de São Pedro",
+                "Capela Sistina",
+                "Templo de Zeus",
+                "Palácio de Versalhes"
+            ],
+            "resposta": 2,
+            "imagem": "capelaSistina.png"
+        },
+        {
+            "pergunta": "Quem pintou 'O Grito'?",
+            "alternativas": [
+                "Vincent van Gogh",
+                "Edvard Munch",
+                "Claude Monet",
+                "Pablo Picasso",
+                "Leonardo da Vinci"
+            ],
+            "resposta": 1,
+            "imagem": "grito.png"
+        },
+        {
+            "pergunta": "O que é uma escultura?",
+            "alternativas": [
+                "Pintura em tela",
+                "Obra em 3D feita de materiais como pedra",
+                "Fotografia",
+                "Desenho a lápis",
+                "Tapeçaria"
+            ],
+            "resposta": 1,
+            "imagem": "escultura.png"
+        },
+        {
+            "pergunta": "Qual destes é um famoso pintor espanhol?",
+            "alternativas": [
+                "Claude Monet",
+                "Vincent van Gogh",
+                "Pablo Picasso",
+                "Leonardo da Vinci",
+                "Michelangelo"
+            ],
+            "resposta": 2,
+            "imagem": "picasso.png"
+        },
+        {
+            "pergunta": "Em que país se originou o Renascimento?",
+            "alternativas": [
+                "França",
+                "Itália",
+                "Espanha",
+                "Alemanha",
+                "Inglaterra"
+            ],
+            "resposta": 1,
+            "imagem": "renascimento.png"
+        },
+        {
+            "pergunta": "Qual desses estilos é caracterizado por exagero e dramaticidade?",
+            "alternativas": [
+                "Cubismo",
+                "Barroco",
+                "Realismo",
+                "Romantismo",
+                "Futurismo"
+            ],
+            "resposta": 1,
+            "imagem": "barroco.png"
+        },
+        {
+            "pergunta": "Qual das opções é uma obra do artista Salvador Dalí?",
+            "alternativas": [
+                "Noite Estrelada",
+                "Guernica",
+                "A Persistência da Memória",
+                "A Ronda Noturna",
+                "A Última Ceia"
+            ],
+            "resposta": 2,
+            "imagem": "persistenciaMemoria.png"
+        },
+        {
+            "pergunta": "O Surrealismo é um movimento artístico que busca expressar:",
+            "alternativas": [
+                "A realidade como ela é",
+                "A beleza natural",
+                "O inconsciente e os sonhos",
+                "A história antiga",
+                "O cotidiano"
+            ],
+            "resposta": 2,
+            "imagem": "surrealismo.png"
+        },
+        {
+            "pergunta": "O que significa 'pintura a óleo'?",
+            "alternativas": [
+                "Pintura feita com óleo de cozinha",
+                "Tinta à base de óleo",
+                "Tinta à base de água",
+                "Desenho a lápis",
+                "Desenho com caneta"
+            ],
+            "resposta": 1,
+            "imagem": "pinturaOleo.png"
+        }
+    ]
+}

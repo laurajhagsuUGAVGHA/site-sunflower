@@ -1,0 +1,363 @@
+/* Geral */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #ffffff;
+    font-family: Nunito, sans-serif;
+}
+
+/* Fonte */
+@font-face {
+    font-family: Nunito;
+    src: url(font/Nunito-VariableFont_wght.ttf);
+}
+
+/* Header */
+.header {
+    width: 100%;
+}
+
+
+.imagemDaVelha {
+    position: relative;
+    z-index: 1;
+    /* valor baixo para ficar abaixo da onda */
+}
+
+.onda-container {
+    position: relative;
+    z-index: 8;
+    /* valor alto para ficar acima da imagem */
+}
+
+.onda-container svg {
+    width: 100%;
+    transform: scaleY(-1);
+}
+
+/* Botão Voltar */
+
+
+.voltar {
+    position: absolute;
+    z-index: 10;
+    color: #ffffff;
+    background-color: #91af50;
+    width: 8vh;
+    height: 4vh;
+    border-radius: 1vh;
+    margin-top: 0.75vh;
+    margin-left: 1vh;
+    cursor: pointer;
+}
+
+/* Ocultar */
+.oculto {
+    display: none;
+}
+
+/* Container Principal */
+.container {
+    margin: 50px auto;
+    max-width: 400px;
+    margin-top: 50vh;
+}
+
+/* Título */
+.titulo-EscolhaModo {
+    font-family: 'Nunito';
+    font-weight: 800;
+    font-size: 4vh;
+    color: #3F3F3F;
+}
+
+.botoesInicio {
+    display: flex;
+    margin-top: 2vh;
+    justify-content: center;
+}
+
+#doisJogadores,
+#vsBot {
+    box-shadow: 0px 4px 8px rgba(48, 48, 48, 0.2);
+    justify-content: space-between;
+    width: 214px;
+    height: 44px;
+    border-radius: 25px;
+    border: 1px solid #BDBDBD;
+    background-color: #ffffff;
+    font-family: 'Nunito';
+    font-weight: 800;
+    color: #3F3F3F;
+}
+
+/* PARTE PARA ESCOLHER X OU O */
+.escolhaXeO {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#paginaEscolhaJogador {
+    margin-top: -50vh;
+    text-align: center;
+}
+
+.titulo-EscolhaXouO {
+    font-size: 5vh;
+}
+
+#escolherX,
+#escolherO {
+    transition: transform 0.3s ease;
+    /* Transição suave ao passar o mouse */
+}
+
+/* Efeito ao passar o mouse */
+#escolherX:hover,
+#escolherO:hover {
+    transform: scale(1.1) translateY(-10px);
+    /* Aumenta o tamanho e move para cima */
+}
+
+
+/* Tabuleiro */
+.tabuleiro {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    margin: 20px;
+    padding: 10px;
+    background-color: #a3b974;
+    border-radius: 20px;
+    justify-content: center;
+}
+
+#tabuleiro{
+    margin-top: -50vh;
+}
+/* CONTAGEM */
+#contagemX{
+    color: #F56462;
+}
+#contagemO{
+    color: #FFA53B;
+}
+
+/* Células individuais com bordas específicas */
+.celula {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-family: 'Nunito', sans-serif;
+    /* Fonte do texto */
+    font-weight: bold;
+    /* Deixa o texto em negrito */
+
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+
+
+}
+
+.celula.X {
+    color: #F56462;
+    /* Vermelho para o "X" */
+}
+
+.celula.O {
+    color: #FFA53B;
+    /* Azul para o "O" */
+}
+
+
+
+.celula:nth-child(1),
+.celula:nth-child(2),
+.celula:nth-child(3) {
+    border-bottom: 4px solid #ffffff;
+    /* Borda inferior */
+}
+
+.celula:nth-child(1),
+.celula:nth-child(4),
+.celula:nth-child(7) {
+    border-right: 4px solid #ffffff;
+    /* Borda direita */
+}
+
+.celula:nth-child(4),
+.celula:nth-child(5),
+.celula:nth-child(6) {
+    border-bottom: 4px solid #ffffff;
+    /* Borda inferior (meio) */
+}
+
+.celula:nth-child(2),
+.celula:nth-child(5),
+.celula:nth-child(8) {
+    border-right: 4px solid #ffffff;
+    /* Borda direita (meio) */
+}
+
+
+.celula:hover {
+    background-color: #a7b6a9;
+}
+
+/* Botões */
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #BBD18B;
+}
+
+/* Botões de Modo de Jogo */
+
+
+/* Escolha do Jogador */
+
+
+#escolherX,
+#escolherO {
+    cursor: pointer;
+    margin: 10vh;
+}
+
+/* Página de Escolha do Modo de Jogo */
+#paginaEscolhaModo {
+    margin-top: -60vh;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+/*  QUANTAS VEZES CADA UM GANHOU */
+#contagem {
+    text-align: center;
+    margin-top: 20vh;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#contagem p {
+    font-size: 1.5rem;
+    margin: 5px 0;
+}
+
+
+/* Resultado */
+/* Modal */
+/* CSS para o modal */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal-conteudo {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.oculto {
+    display: none;
+}
+
+/* CSS para a contagem de vitórias */
+#contagem {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+
+
+#contagem p {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 0 20px;
+
+    text-align: center;
+}
+
+
+
+
+#paginaTabuleiro {
+    margin-top: -20vh;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+@media (max-width: 768px) {
+
+    /* Ajustes para telas menores que 768px */
+
+
+    .container {
+        margin-top: 70vh;
+    }
+
+    .onda-container svg {
+        margin-top: 1vh;
+        transform: scaleY(-1.24);
+    }
+
+    #paginaTabuleiro {
+        margin-top: -40vh;
+        align-items: center;
+        justify-content: center;
+    }
+    .imagemJogoDaVelha img{
+        width: 20vh;
+        height: 26vh;
+    }
+
+    .titulo-EscolhaModo{
+        font-size: 3.35vh;
+    }
+
+    #doisJogadores, #vsBot{
+        width: 20vh;
+        height: 7vh;
+        align-items: center;
+        font-size: 2.30vh;
+    }
+    #escolherX, #escolherO{
+        width: 14vh;
+        height: 12vh;
+    }
+    .titulo-EscolhaXouO{
+        font-size: 4.45vh;
+    }
+}

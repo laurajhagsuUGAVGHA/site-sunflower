@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" href="img/logo.png">
+    <title>Categoria</title>
+
+</head>
+
+<style>
+    @font-face {
+        font-family: Nunito;
+        src: url(font/Nunito-VariableFont_wght.ttf);
+    }
+
+    body {
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    header {
+        margin-top: 5vh;
+    }
+
+    .container-botao {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 13vh;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+
+
+    .linha {
+        height: 0.20vh;
+        width: 100%;
+        background-color: #CACACA;
+    }
+
+    .container-botao button {
+        width: 50vh;
+        height: 10vh;
+        font-family: 'Nunito';
+        font-weight: 700;
+        font-size: 3vh;
+        color: white;
+        border-radius: 15px;
+        border: none;
+    }
+
+    .imagemGirassol-Inicio {
+        display: flex;
+        justify-content: right;
+        margin-top: -1.78vh;
+
+
+    }
+
+
+
+
+    .Quiz {
+        background-color: #EF8483;
+        border: 2px solid #d1878e;
+        transition: transform 0.3s, background-color 0.2s;
+    }
+
+    .Quiz:hover {
+        transform: scale(1.05);
+    }
+
+
+    .JogoDaMemoria {
+        background-color: #FF9C62;
+        border: 2px solid #e68848;
+        transition: transform 0.3s, background-color 0.2s;
+    }
+
+    .JogoDaMemoria:hover {
+        transform: scale(1.05);
+    }
+
+   
+
+ 
+    .JogoDaVelha {
+        background-color: #B1C97D;
+        border: 2px solid #99b667;
+        transition: transform 0.3s, background-color 0.2s;
+    }
+
+    .JogoDaVelha:hover {
+        transform: scale(1.05);
+    }
+
+   
+
+    .cacaPalavra {
+        background-color: #99ccff;
+        border: 2px solid #99ccff;
+        transition: transform 0.3s, background-color 0.2s;
+    }
+
+    .cacaPalavra:hover {
+        transform: scale(1.05);
+    }
+
+ 
+    button {
+        cursor: pointer;
+    }
+
+    h2 {
+        font-family: 'Nunito';
+        margin-left: 2vh;
+    }
+
+
+    .material-icons {
+        display: none;
+    }
+
+
+
+    @media (max-width: 768px) {
+        .container-botao button {
+            width: 80vw;
+            height: 8vh;
+            font-size: 2.5vh;
+        }
+
+        h2 {
+            font-size: 3vh;
+            text-align: center;
+        }
+
+        .imagemGirassol-Inicio {
+            display: none;
+        }
+
+        .material-icons {
+            display: inline;
+        }
+    }
+</style>
+
+<body>
+    <header>
+        <div class="voltar" id="voltarParaInicio">
+            <span class="material-icons" id="voltar " >arrow_back</span>
+
+            <h2>Jogos Educativos</h2>
+            <div class="linha"></div>
+        </div>
+    </header>
+    <main>
+        <div class="container-botao">
+            <button class="Quiz" onclick="window.location.href='capaQuiz.html?'">Teste seu Aprendizado</button>
+            <button class="JogoDaVelha" onclick="window.location.href='JogoDaVelha.html?'">Jogo da Velha</button>
+            <button class="JogoDaMemoria" onclick="window.location.href='JogoDaMemoria.html?'">Jogo da Memória</button>
+            <button class="cacaPalavra" onclick="window.location.href='cacaPalavras.html'">Caça Palavras</button>
+        </div>
+        <div class="imagemGirassol-Inicio"> <img src="img/girassol-inicio.png" alt="imagem girassol"></div>
+    </main>
+
+
+
+</body>
+
+</html>
