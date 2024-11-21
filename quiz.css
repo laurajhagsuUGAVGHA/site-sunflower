@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: poppins;
+    src: url(font/Poppins-Regular.ttf);
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: radial-gradient(circle, #FFA193, #FBD6D1);
+    overflow: hidden;
+}
+
+
+
+/* PARTE BRANCA */
+main  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.fundo-branco-quiz h3, .imagem-quiz{
+    padding-top: 4vh;
+}
+.imagem-quiz{
+    margin-top: 1vh ;
+}
+.fundo-branco-quiz {
+    z-index: 2;
+    width: 80vh;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    height: 98vh;
+    background-color: white;
+    align-items: center;
+    border-radius: 10px;
+    text-align: center;
+}
+.fundo-branco-quiz h3{
+    text-align: center;
+    align-items: center;
+    font-family: poppins;
+    font-weight: 500;
+   max-width: 100%;
+   
+   
+    
+   
+}
+.alternativas {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    align-items: center;
+    margin-top: 3vh;
+   
+}
+.alternativa {
+    padding: 10px;
+    border-radius: 15px;
+    width: 60vh;
+    height: 7vh;
+    background-color: #FFD7A9;
+    border: none;
+    cursor: pointer;
+    font-family: "poppins";
+    font-weight: 500;
+    font-size: 2.20vh;
+    text-align: left;
+    transition: background-color 0.3s;
+}
+.alternativa.correta {
+    background-color: green;
+    color: white;
+}
+.alternativa.errada {
+    background-color: red;
+    color: white;
+}
+
+.botao-pular, #buttonVoltar {
+    width: 20vh;
+    height: 5vh;
+    margin-top: 30px;
+    border-radius: 15px;
+    background-color: #fcb25e;
+    border: none;
+    cursor: pointer;
+    font-family: "poppins";
+    font-weight: 500;
+    font-size: 2.30vh;
+    
+}
+
+.hidden {
+    display: none;
+}/* Estilo do Modal */
+.modal {
+    display: none; /* Oculto por padrão */
+    position: fixed; /* Fixo na tela */
+    z-index: 1; /* Fica acima dos outros elementos */
+    left: 0;
+    top: 0;
+    width: 100%; /* Largura total */
+    height: 100%; /* Altura total */
+    overflow: auto; /* Ativa rolagem se necessário */
+    background-color: rgb(0, 0, 0); /* Cor de fundo */
+    background-color: rgba(0, 0, 0, 0.4); /* Fundo com opacidade */
+    padding-top: 60px; /* Espaço acima do modal */
+    align-items: center;
+}
+
+.modal-conteudo {
+    background-color: #fefefe; /* Cor do conteúdo */
+    margin: 5% auto; /* Margem automática para centralizar */
+    padding: 20px;
+    border: 1px solid #888; /* Borda do modal */
+    width: 70vh; /* Largura do modal */
+    height: 40vh;
+    border-radius: 5px; /* Bordas arredondadas */
+    font-family: "poppins";
+    align-items: center;
+}
+#reiniciar, #paginaInicialJogos{
+    width: 20vh;
+    height: 5vh;
+    margin-top: 15px;
+    border-radius: 15px;
+    background-color: #fcb25e;
+    border: none;
+    cursor: pointer;
+    font-family: "poppins";
+    font-weight: 500;
+    font-size: 2.50vh;
+    
+}
+
+.fechar {
+    color: #aaa; /* Cor do botão de fechar */
+    float: right; /* Flutua à direita */
+    font-size: 28px; /* Tamanho da fonte */
+    font-weight: bold; /* Negrito */
+}
+
+.fechar:hover,
+.fechar:focus {
+    color: red; /* Cor ao passar o mouse */
+    text-decoration: none; /* Sem sublinhado */
+    cursor: pointer; /* Cursor como ponteiro */
+}
+
+.imagem-pequena {
+    width: 50%; /* Ajuste a largura conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+
+@media screen and (max-width: 365px) {
+    body {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        align-items: center;
+        padding: 20px;
+        overflow-y: auto; /* Permite rolagem vertical para conteúdo longo */
+    }
+
+    .fundo-branco-quiz {
+        width: 90%; /* Reduz a largura para caber em telas pequenas */
+        height: 105vh; /* Permite que a altura se ajuste ao conteúdo */
+        padding: 10px;
+    }
+    .imagem-quiz{
+        width: 36vh;
+    }
+
+    h3 {
+        font-size: 2.5vh; /* Ajuste de fonte para perguntas */
+        padding-top: 2vh;
+    }
+
+    .alternativas {
+        gap: 10px;
+    }
+
+    .alternativa {
+      width: 30vh;
+        font-size: 2.2vh; /* Ajuste no tamanho da fonte */
+        height: 7vh; /* Deixa a altura flexível conforme o conteúdo */
+        padding: 8px;
+        font-size: 1.8vh;
+    }
+
+    .botao-pular, #buttonVoltar {
+        width: 30vh;
+        font-size: 2.2vh; /* Ajuste no tamanho da fonte */
+        height: 5vh; 
+    }
+
+    .modal-conteudo {
+        width: 80%; /* Modal ocupa menos espaço horizontal */
+        height: auto; /* Altura ajustável ao conteúdo */
+    }
+
+    #reiniciar, #paginaInicialJogos {
+        width: 100%; /* Botões ocupam toda a largura do modal */
+        font-size: 2.3vh; /* Fonte dos botões no modal */
+    }
+
+    .fechar {
+        font-size: 24px;
+    }
+
+    
+    .imagem-pequena {
+        width: 100%; /* Ajuste de largura para a imagem */
+    }
+}

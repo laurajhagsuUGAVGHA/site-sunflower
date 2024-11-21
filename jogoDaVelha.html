@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="jogoDaVelha.css">
+    <link rel="icon" href="img/logo.png">
+</head>
+
+<body>
+
+    <header>
+        <div class="voltar"id="voltarParaInicio" onclick="window.location.href='quiz.html?'">
+            <span class="material-icons" >arrow_back</span>
+        </div>
+
+        <div class="onda-container">
+            <svg viewBox="0 0 1440 250">
+                <path fill="#C2D898" fill-opacity="1"
+                    d="M0,0L60,26.7C120,53,240,107,360,122.7C480,139,600,117,720,106.7C840,96,960,96,1080,122.7C1200,149,1320,203,1380,229.3L1440,256L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
+                </path>
+            </svg>
+        </div>   
+    </header>
+
+    <main>
+
+        <div class="container">
+            <!-- Página de escolha do modo de jogo -->
+            <div id="paginaEscolhaModo">
+                <div class="imagemJogoDaVelha">
+                    <img src="img/image 17.png" alt="">
+                </div>
+                <h3 class="titulo-EscolhaModo">Escolha o seu modo de jogar</h3>
+                <div class="botoesInicio">
+                    <button id="doisJogadores">2 Jogadores</button>
+                    <button id="vsBot">Computador</button>
+                </div>
+            </div>
+
+            <!-- Página de escolha do jogador (X ou O) -->
+            <div id="paginaEscolhaJogador" class="oculto">
+                <h3 class="titulo-EscolhaXouO">Escolha o seu lado</h3>
+                <div class="escolhaXeO">
+                    <img id="escolherX" src="img/oi_x.png" alt="">
+                    <img id="escolherO" src="img/Vector.png" alt="">
+                </div>
+            </div>
+
+            <!-- Tabuleiro do jogo -->
+            <div id="paginaTabuleiro" class="oculto">
+                <div id="tabuleiro" class="tabuleiro">
+                    <div class="celula" data-index="0"></div>
+                    <div class="celula" data-index="1"></div>
+                    <div class="celula" data-index="2"></div>
+                    <div class="celula" data-index="3"></div>
+                    <div class="celula" data-index="4"></div>
+                    <div class="celula" data-index="5"></div>
+                    <div class="celula" data-index="6"></div>
+                    <div class="celula" data-index="7"></div>
+                    <div class="celula" data-index="8"></div>
+                </div>
+                <!-- Contagem de Vitórias -->
+                <div id="contagem">
+                    <p>X: <span id="contagemX">0</span></p>
+                    <p>O: <span id="contagemO">0</span></p>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div id="modal" class="modal oculto">
+                <div class="modal-conteudo">
+                    <h2 id="modalVencedor"></h2>
+                    <button id="jogarNovamenteModal">Jogar Novamente</button>
+                    <button id="sairModal">Sair do Jogo</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        const paginaEscolhaModo = document.getElementById("paginaEscolhaModo");
+        const paginaEscolhaJogador = document.getElementById("paginaEscolhaJogador");
+        const paginaTabuleiro = document.getElementById("paginaTabuleiro");
+        const tabuleiro = document.getElementById("tabuleiro");
+        const celulas = document.querySelectorAll(".celula");
+        const modal = document.getElementById("modal");
+        const modalVencedor = document.getElementById("modalVencedor");
+        const jogarNovamenteModalBtn = document.getElementById("jogarNovamenteModal");
+        const sairModalBtn = document.getElementById("sairModal");
+        const voltarParaInicioBtn = document.getElementById("voltarParaInicio");
+
+        let jogadorAtual = 'X';
+        let tabuleiroEstado = ["", "", "", "", "", "", "", "", ""];
+        let jogoBot = false;
+        let jogadorSimbolo = 'X';
+        let botSimbolo = 'O';
+        let jogoFinalizado = false;
+        let contagemX = 0;
+        let contagemO = 0;
+
+        // Função para reiniciar o jogo
+        function reiniciarJogo() {
+            tabuleiroEstado = ["", "", "", "", "", "", "", "", ""];
+            jogoFinalizado = false;
+            jogadorAtual = jogadorSimbolo;  // Reinicia o jogador para o jogador escolhido
+            celulas.forEach(celula => {
+                celula.textContent = "";  // Limpa o texto dentro das células
+                celula.classList.remove('X', 'O');  // Remove as classes que indicam X e O
+            });
+            modal.classList.add("oculto");  // Esconde o modal
+        }
+
+        // Função para mostrar o modal
+        function mostrarModal(vencedor) {
+            if (vencedor === "Empate") {
+                modalVencedor.textContent = "Empate!";
+            } else {
+                modalVencedor.textContent = `Ganhador: ${vencedor}`; // Correção aqui
+            }
+            modal.classList.remove("oculto");
+        }
+
+        // Função para verificar vencedor
+        function verificarVencedor() {
+            const combinacoesVencedoras = [
+                [0, 1, 2], [3, 4, 5], [6, 7, 8], // Linhas
+                [0, 3, 6], [1, 4, 7], [2, 5, 8], // Colunas
+                [0, 4, 8], [2, 4, 6]             // Diagonais
+            ];
+
+            combinacoesVencedoras.forEach(combinacao => {
+                const [a, b, c] = combinacao;
+                if (tabuleiroEstado[a] && tabuleiroEstado[a] === tabuleiroEstado[b] && tabuleiroEstado[a] === tabuleiroEstado[c]) {
+                    jogoFinalizado = true;
+                    mostrarModal(jogadorAtual);
+                    if (jogadorAtual === 'X') contagemX++;
+                    if (jogadorAtual === 'O') contagemO++;
+                    atualizarContagemVitorias();
+                }
+            });
+
+            if (!tabuleiroEstado.includes("") && !jogoFinalizado) {
+                mostrarModal("Empate");
+            }
+        }
+
+        // Função para atualizar contagem de vitórias
+        function atualizarContagemVitorias() {
+            document.getElementById('contagemX').textContent = contagemX;
+            document.getElementById('contagemO').textContent = contagemO;
+        }
+
+        // Função de clicar nas células
+        celulas.forEach(celula => {
+            celula.addEventListener("click", (e) => {
+                const index = e.target.getAttribute("data-index");
+                if (tabuleiroEstado[index] === "" && !jogoFinalizado) {
+                    tabuleiroEstado[index] = jogadorAtual;
+                    e.target.classList.add(jogadorAtual);
+                    e.target.textContent = jogadorAtual;
+                    verificarVencedor();
+                    if (!jogoFinalizado && jogoBot && jogadorAtual === jogadorSimbolo) {
+                        jogadorAtual = botSimbolo; // Muda para o bot
+                        setTimeout(jogarComoBot, 500); // Espera 500ms antes do bot jogar
+                    } else {
+                        jogadorAtual = (jogadorAtual === 'X') ? 'O' : 'X';
+                    }
+                }
+            });
+        });
+
+        // Função do bot para jogar
+        function jogarComoBot() {
+            const indicesVazios = tabuleiroEstado.map((celula, index) => celula === "" ? index : null).filter(index => index !== null);
+            const indexAleatorio = indicesVazios[Math.floor(Math.random() * indicesVazios.length)];
+            if (indexAleatorio !== undefined) {
+                tabuleiroEstado[indexAleatorio] = jogadorAtual;
+                celulas[indexAleatorio].classList.add(jogadorAtual);
+                celulas[indexAleatorio].textContent = jogadorAtual;
+                verificarVencedor();
+                jogadorAtual = (jogadorAtual === 'X') ? 'O' : 'X'; // Troca de jogador
+            }
+        }
+
+        // Funções dos botões
+        document.getElementById("doisJogadores").addEventListener("click", () => {
+            paginaEscolhaModo.classList.add("oculto");
+            paginaEscolhaJogador.classList.remove("oculto");
+        });
+
+        document.getElementById("vsBot").addEventListener("click", () => {
+            jogoBot = true;
+            paginaEscolhaModo.classList.add("oculto");
+            paginaEscolhaJogador.classList.remove("oculto");
+        });
+
+        document.getElementById("escolherX").addEventListener("click", () => {
+            jogadorSimbolo = 'X';
+            botSimbolo = 'O';
+            paginaEscolhaJogador.classList.add("oculto");
+            paginaTabuleiro.classList.remove("oculto");
+            reiniciarJogo();
+        });
+
+        document.getElementById("escolherO").addEventListener("click", () => {
+            jogadorSimbolo = 'O';
+            botSimbolo = 'X';
+            paginaEscolhaJogador.classList.add("oculto");
+            paginaTabuleiro.classList.remove("oculto");
+            reiniciarJogo();
+        });
+
+        jogarNovamenteModalBtn.addEventListener("click", () => {
+            reiniciarJogo();
+        });
+
+        sairModalBtn.addEventListener("click", () => {
+            window.location.reload(); // Reinicia a página
+        });
+        document.getElementById("voltarParaInicio").onclick = function() {
+            // Redirecionar para a página inicial (altere o nome para a página desejada)
+            window.location.replace("inicioJogo.html"); // Certifique-se de que "inicio.html" seja o nome correto
+        };
+    </script>
+</body>
+
+</html>

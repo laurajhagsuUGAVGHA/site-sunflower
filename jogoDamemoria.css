@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFD5BC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    position: relative;
+}
+
+.timer {
+    position: absolute;
+    color: white;
+    top: 20px;
+    right: 20px;
+    background-color: #FF8237;
+    display: flex;
+    border-radius: 15vh;
+    width: 14vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock-icon {
+    color: white;
+    width: 24px;
+    height: 24px;
+    margin-right: 0.75vh;
+}
+
+.memory-game {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* 7 colunas */
+    gap: 10px;
+    margin-top: 70px;
+}
+
+.card {
+    width: 100px; /* Largura da carta */
+    height: 100px; /* Altura da carta */
+    position: relative;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: #FFB284;
+    transform: rotateY(0deg); /* Início sem rotação */
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.card.show {
+    transform: rotateY(180deg); /* Aplica a rotação quando a carta é virada */
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    backface-visibility: hidden; /* Esconde a imagem ao virar a carta */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Estilos do modal */
+.modal {
+    display: none; /* Escondido por padrão */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 300px;
+    text-align: center;
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
