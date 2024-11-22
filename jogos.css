@@ -195,6 +195,22 @@
         margin-top: -200px;
     }
 
+    .img-palavra {
+        width: 300px;
+        margin-left: 900px;
+        margin-top: 100px;
+    }
+
+    .jogo-palavra h1 {
+        margin-left: 300px;
+        margin-top: -200px;
+    }
+
+    .jogo-palavra p {
+        width: 1000px;
+        margin-left: 100px;
+    }
+
     .quiz-aprendizado p {
         margin-left: 700px;
 
@@ -558,7 +574,7 @@
         }
 
         .imagem img {
-            width: 40%;
+            width: 45%;
         }
 
         .container {
@@ -576,91 +592,171 @@
 
         #navegacao {
             display: none;
-            /* Oculta a navegação no mobile */
+
         }
+
 
         .jogos-educacionais {
             position: relative;
-            display: inline-block;
+            display: block;
             width: 100%;
+            margin: 20px auto;
         }
 
         .jogos-verde {
-            width: 70%;
-            height: 50%;
-            max-width: 100%;
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            margin: 10px auto;
         }
 
         .jogos-imagem1 {
             position: absolute;
             top: 65%;
-            left: 60%;
+            left: 50%;
             transform: translate(-50%, -50%);
-            width: 18%;
-            /* Ajusta a largura para caber dentro do contêiner */
-            max-width: 60%;
-            /* Limita o tamanho máximo */
+            width: 35%;
+            max-width: 150px;
+        }
+
+        .jogo-velha {
+            width: 100%;
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        .jogo-memoria,
+        .jogo-palavra,
+        .quiz-aprendizado {
+            width: 100%;
+            margin: 0;
         }
 
         .text-jogos {
             position: absolute;
-            font-family: 'Poppins';
-            font-size: 35px;
-            color: #000000A9;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.8rem;
+            color: rgba(0, 0, 0, 0.66);
             top: 30%;
-            margin-left: 100px;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
         }
 
         .img-quiz {
-            width: 250px;
-            margin-top: 150px;
-            margin-left: 500px;
+            width: 80%;
+            max-width: 250px;
+            margin: 20px auto;
+            display: block;
         }
 
         .button-quiz {
-            margin-left: 570px;
-            margin-top: 250px;
+            margin: 15px auto;
+            display: flex;
+            justify-content: center;
         }
 
         .p-quiz {
-            font-size: 0px;
+            font-size: 0;
+            /* Mantém oculto */
         }
 
         .quiz-aprendizado h1 {
-            margin-left: 590px;
-            margin-top: -250px;
+            text-align: center;
+            margin: 20px auto;
+            font-size: 1.8rem;
         }
 
-        .img-velha{
-            margin-left: -0px;
-            margin-top: 20px;
-        }
-        .jogo-velha p{
-            font-size: 0px;
-        }
-        .jogo-velha h1{
-            font-size: 30px;
-            margin-left: 400px;
-            margin-top: 100px;
-            /* text-align: center;
-            justify-content: center;
-            align-items: center; */
-        }
-        .button-velha{
-            /* text-align: center;
-            justify-content: center;
-            align-items: center; */
-            margin-top: 200px;
+        .img-velha {
+            width: 70%;
+            max-width: 200px;
+            margin: 20px auto;
+            display: block;
         }
 
-        .jogo-memoria p{
-            font-size: 0px;
+        .jogo-velha p {
+            font-size: 0;
+            /* Mantém oculto */
         }
-      .jogo-memoria h1{
-        margin-left: 390px;
-        margin-top: -300px;
-      }
-      .button-memoria{
-      margin-top: 250px;
-      }
+
+        .jogo-velha h1 {
+            font-size: 1.5rem;
+            text-align: center;
+            margin: 20px auto;
+
+        }
+
+        .button-velha {
+            margin: 20px auto;
+            display: flex;
+            justify-content: center;
+        }
+
+        .jogo-palavra p {
+            font-size: 0;
+            /* Mantém oculto */
+        }
+
+        .img-palavra {
+            width: 80%;
+            max-width: 250px;
+            margin: 20px auto;
+            display: block;
+        }
+
+        .jogo-palavra h1 {
+            font-size: 1.8rem;
+            text-align: center;
+            margin: 10px auto;
+        }
+
+        .button-palavra {
+            margin: 20px auto;
+            display: flex;
+            justify-content: center;
+        }
+
+        .jogo-memoria p {
+            font-size: 0;
+            /* Mantém oculto */
+        }
+
+        .jogo-memoria h1 {
+            font-size: 1.8rem;
+            text-align: center;
+            margin: 20px auto;
+        }
+
+        .button-memoria {
+            margin: 20px auto;
+            display: flex;
+            justify-content: center;
+        }
+
+        /*RODAPÉ*/
+        .rodape {
+            margin: 0;
+            width: 100%;
+        }
+
+
+        .girassol {
+            margin-top: 30vh;
+        }
+
+        footer {
+            display: flex;
+            font-size: 2;
+            top: 8vh;
+        }
+
+        .ultimo-texto {
+            padding: 0.75vh;
+        }
+
+        .linha {
+            width: 67vh;
+
+
+        }
     }
