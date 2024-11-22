@@ -41,6 +41,7 @@
         align-items: center;
         background-color: #FFF;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.396);
+        width: 100%;
     }
 
     /* ESSA É A PARTE DE LOGO E TITULO SUNFLOWER */
@@ -567,6 +568,7 @@
         color: #8F8F8F;
     }
 
+
     @media (max-width: 720px) {
         .menu-icon {
             display: block;
@@ -605,7 +607,7 @@
 
         .jogos-verde {
             width: 100%;
-            max-width: 800px;
+            max-width: 720px;
             height: auto;
             margin: 10px auto;
         }
