@@ -157,11 +157,12 @@
         position: relative;
         display: inline-block;
         width: 100%;
+        margin: 0;
     }
 
     .jogos-verde {
         width: 100%;
-        max-width: 120%;
+
     }
 
     .jogos-imagem1 {
@@ -184,39 +185,6 @@
         left: 300px;
     }
 
-    .img-quiz {
-        width: 250px;
-        margin-top: 100px;
-        margin-left: 200px;
-    }
-
-    .img-velha {
-        width: 200px;
-        margin-left: 1000px;
-        margin-top: -200px;
-    }
-
-    .img-palavra {
-        width: 300px;
-        margin-left: 900px;
-        margin-top: 100px;
-    }
-
-    .jogo-palavra h1 {
-        margin-left: 300px;
-        margin-top: -200px;
-    }
-
-    .jogo-palavra p {
-        width: 1000px;
-        margin-left: 100px;
-    }
-
-    .quiz-aprendizado p {
-        margin-left: 700px;
-
-
-    }
 
     .button-palavra {
         border: 2px solid #7ac9d0;
@@ -224,7 +192,6 @@
         height: 30px;
         border-radius: 20px;
         background-color: #7ac9d0;
-        margin-left: 350px;
         margin-top: 20px;
     }
 
@@ -234,7 +201,6 @@
         height: 30px;
         border-radius: 20px;
         background-color: #FED3DA;
-        margin-left: 930px;
         margin-top: 20px;
     }
 
@@ -244,7 +210,6 @@
         height: 30px;
         border-radius: 20px;
         background-color: #AEEBD9;
-        margin-left: 350px;
         margin-top: 20px;
     }
 
@@ -254,275 +219,105 @@
         height: 30px;
         border-radius: 20px;
         background-color: #D6DDED;
-        margin-left: 980px;
         margin-top: 20px;
     }
 
-    .quiz-aprendizado h1 {
-        margin-top: -170px;
-        margin-left: 130vh;
+    .quiz-aprendizado {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .quizDiv {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 100px;
+    }
+
+    .p-quiz {
+        margin: 20px 0;
+    }
+
+    .velhaDiv {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 100px;
+    }
+
+    .jogo-velha {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .p-velha {
+        margin: 30px 0;
     }
 
     .jogo-velha h1 {
-        margin-top: 200px;
-        margin-left: 40vh;
-    }
-
-    .jogo-velha p {
-        margin-top: 20px;
-        margin-left: 100px;
-    }
-
-    .jogo-memoria h1 {
-        margin-left: 120vh;
-        margin-top: -170px;
-    }
-
-    .jogo-memoria p {
-        margin-top: 20px;
-        margin-left: 700px;
-    }
-
-    /*TEA*/
-    .comeco-tea {
-        margin-top: 200px;
-    }
-
-    .tea {
-        font-size: 8vh;
-        font-family: 'Poppins';
-        margin-top: -30vh;
-        margin-left: 40vh;
-
-    }
-
-    .transtorno {
-        margin-left: 25vh;
-    }
-
-    .tea-coracao {
-        width: 350px;
-        height: auto;
-        margin-left: 110vh;
-    }
-
-    /* Coração pulsante */
-    .heart-image {
-        /* Ajuste o tamanho conforme necessário */
-        animation: pulse 4s infinite;
-        /* Ajuste a duração para 2s para uma pulsação mais lenta */
-    }
-
-    /* Animação de pulsação */
-    @keyframes pulse {
-
-        0%,
-        100% {
-            transform: scale(1);
-        }
-
-        50% {
-            transform: scale(1.1);
-        }
-    }
-
-    /*oque é*/
-
-    .meio-pagina {
-        width: 1510px;
-        height: 400px;
-        margin-top: 300px;
-        background-color: #E8FAF0;
-    }
-
-    .h1-meio-pagina {
-        font-family: 'Poppins';
-        font-weight: 100;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        padding: 20px;
-
-    }
-
-    .quebra-cabeca1,
-    .quebra-cabeca2,
-    .quebra-cabeca3 {
-        width: 50px;
-        height: auto;
-    }
-
-    .quebra-cabeca1 {
-        margin-left: 80px;
-        margin-top: 30px;
-    }
-
-    .texto1 {
-        margin-top: -40px;
-        margin-left: 160px;
-    }
-
-    .quebra-cabeca2 {
-        margin-left: 150px;
         margin-top: 40px;
     }
 
-    .texto2 {
-        margin-top: -40px;
-        margin-left: 230px;
-    }
-
-    .quebra-cabeca3 {
-        margin-left: 220px;
-        margin-top: 50px;
-    }
-
-    .texto3 {
-        margin-top: -50px;
-        margin-left: 280px;
-    }
-
-    /*autismo nas escolas*/
-    .autismo-escolas img {
-        height: auto;
-        width: 400px;
-        margin-top: 200px;
-    }
-
-    .autismo {
-        font-size: 35px;
-        margin-top: -300px;
-        margin-left: 60px;
-    }
-
-    .bolinha1,
-    .bolinha2,
-    .bolinha3 {
-        border: 2px solid #FED3DA;
-        background-color: #FED3DA;
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
-
-    }
-
-    .bolinha1 {
-        margin-top: -110px;
-        margin-left: 600px;
-    }
-
-    .texto-1 {
-        margin-left: 650px;
-        margin-top: -22px;
-
-    }
-
-    .bolinha2 {
-        margin-top: 45px;
-        margin-left: 600px;
-
-    }
-
-    .texto-2 {
-        margin-left: 650px;
-        margin-top: -20px;
-    }
-
-    .bolinha3 {
-        margin-top: 40px;
-        margin-left: 600px;
-    }
-
-    .texto-3 {
-        margin-left: 650px;
-        margin-top: -22px;
-    }
-
-    /*Doenças*/
-
-    .final {
-        width: 100%;
-        margin-top: 303px;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .linha1,
-    .linha2 {
-        width: 500px;
-        height: 50px;
-    }
-
-    .doencas-invisiveis {
-        width: 10%;
-    }
-
-    .p-doencas {
-        font-size: 25px;
-        font-family: 'Poppins';
-        font-weight: 100;
-    }
-
-
-    .quadrados-container {
+    .memoriaDiv {
         display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 110px;
+    }
+
+    .jogo-memoria {
+        display: flex;
+        align-items: center;
         justify-content: space-around;
-        width: 100%;
-        margin-top: 80px;
     }
 
-    .quadrado {
-        width: 150px;
-        height: 150px;
-        background-color: #FFE3AE;
-        border: 1px solid #FFBE40;
-        color: black;
+    .p-memoria {
+        margin: 20px 0;
+    }
+
+    .palavraDiv {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
         align-items: center;
-        cursor: pointer;
-        border-radius: 15px;
-        transition: background-color 0.3s;
-        position: relative;
-        font-size: 18px;
-        text-align: center;
         justify-content: center;
-        font-family: 'Poppins';
-        transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
-        /* Adicionando transições */
-        position: relative;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        /* Efeito de relevo */
+        margin-top: 100px;
     }
 
-    .quadrado:hover {
-        background-color: #ffbf405b;
-        transform: translateY(-2px);
-        /* Leve movimento para cima ao passar o mouse */
-        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-        /* Sombras mais intensas ao passar o mouse */
+    .jogo-palavra {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
     }
 
-    .info {
-        position: absolute;
-        top: -50px;
-        /* Posiciona acima do quadrado */
-        left: 50%;
-        transform: translateX(-50%);
+    .p-palavra {
+        margin: 20px 0;
+    }
+
+    .img-palavra {
+        width: 350px;
+        margin-top: 100px;
+    }
+
+    .img-memoria {
         width: 300px;
-        height: 230px;
-        background-color: #fff;
-        border: 2px solid #FFCB67;
-        color: black;
-        border-radius: 5px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 16px;
-        z-index: 1;
-        /* Certifica-se de que o quadrado informativo esteja acima */
+        margin-top: 100px;
     }
+
+    .img-quiz {
+        width: 350px;
+        margin-top: 100px;
+    }
+
+    .img-quiz {
+        width: 300px;
+        margin-top: 100px;
+    }
+
 
     /* FOOTER */
 
@@ -609,13 +404,12 @@
             width: 100%;
             max-width: 720px;
             height: auto;
-            margin: 10px auto;
+            margin: 20px auto;
         }
 
         .jogos-imagem1 {
             position: absolute;
             top: 65%;
-            left: 50%;
             transform: translate(-50%, -50%);
             width: 35%;
             max-width: 150px;
@@ -631,26 +425,29 @@
         .jogo-palavra,
         .quiz-aprendizado {
             width: 100%;
+            flex-direction: column;
             margin: 0;
+        }
+
+        .quizDiv,
+        .memoriaDiv,
+        .velhaDiv,
+        .palavraDiv {
+            margin-top: 0;
         }
 
         .text-jogos {
             position: absolute;
             font-family: 'Poppins', sans-serif;
-            font-size: 1.8rem;
+            font-size: 1.6rem;
             color: rgba(0, 0, 0, 0.66);
             top: 30%;
-            left: 50%;
+            left: 40%;
             transform: translateX(-50%);
             text-align: center;
         }
 
-        .img-quiz {
-            width: 80%;
-            max-width: 250px;
-            margin: 20px auto;
-            display: block;
-        }
+
 
         .button-quiz {
             margin: 15px auto;
@@ -658,10 +455,6 @@
             justify-content: center;
         }
 
-        .p-quiz {
-            font-size: 0;
-            /* Mantém oculto */
-        }
 
         .quiz-aprendizado h1 {
             text-align: center;
@@ -676,29 +469,6 @@
             display: block;
         }
 
-        .jogo-velha p {
-            font-size: 0;
-            /* Mantém oculto */
-        }
-
-        .jogo-velha h1 {
-            font-size: 1.5rem;
-            text-align: center;
-            margin: 20px auto;
-
-        }
-
-        .button-velha {
-            margin: 20px auto;
-            display: flex;
-            justify-content: center;
-        }
-
-        .jogo-palavra p {
-            font-size: 0;
-            /* Mantém oculto */
-        }
-
         .img-palavra {
             width: 80%;
             max-width: 250px;
@@ -706,8 +476,42 @@
             display: block;
         }
 
-        .jogo-palavra h1 {
-            font-size: 1.8rem;
+        .img-quiz {
+            width: 80%;
+            max-width: 250px;
+            margin: 20px auto;
+            display: block;
+        }
+
+        .img-memoria {
+            width: 80%;
+            max-width: 200px;
+            margin: 20px auto;
+            display: block;
+        }
+
+        .jogo-velha p,
+        .jogo-palavra p,
+        .jogo-memoria p,
+        .p-quiz {
+            font-size: 0;
+            /* Mantém oculto */
+        }
+
+
+
+        .button-velha {
+            margin: 20px auto;
+            display: flex;
+            justify-content: center;
+        }
+
+
+        .jogo-palavra h1,
+        .jogo-memoria h1,
+        .jogo-velha h1,
+        .quiz-aprendizado h1 {
+            /* font-size: 1.8rem; */
             text-align: center;
             margin: 10px auto;
         }
@@ -718,16 +522,8 @@
             justify-content: center;
         }
 
-        .jogo-memoria p {
-            font-size: 0;
-            /* Mantém oculto */
-        }
 
-        .jogo-memoria h1 {
-            font-size: 1.8rem;
-            text-align: center;
-            margin: 20px auto;
-        }
+
 
         .button-memoria {
             margin: 20px auto;

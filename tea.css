@@ -1,0 +1,439 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    font-family: 'Poppins';
+    background-color: #ffffff;
+}
+
+@font-face {
+    font-family: Belleza;
+    src: url(assets/Belleza-Regular.ttf);
+}
+
+@font-face {
+    font-family: poppins;
+    src: url(assets/Poppins-Regular.ttf);
+}
+
+header {
+
+    position: fixed;
+    top: -5vh;
+    width: 100%;
+    z-index: 1000;
+    /* Garante que o cabeçalho fique acima de outros elementos */
+    padding: 10px 0;
+}
+
+.container {
+    display: flex;
+    height: 19vh;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFF;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.396);
+    width: 100%;
+}
+
+/* ESSA É A PARTE DE LOGO E TITULO SUNFLOWER */
+.logo-titulo {
+    display: flex;
+    margin-top: 2vh;
+}
+
+.imagem {
+    max-width: 50%;
+}
+
+.imagem img {
+    width: 50%;
+    margin-left: 5vh;
+
+}
+
+.titulo {
+    margin-top: 2.1vh;
+    margin-left: 1vh;
+    font-family: Belleza;
+    font-weight: 300;
+    font-size: 25px;
+
+}
+
+/* ESSA É A PARTE DE INICIO SOBRE ...... */
+#navegacao {
+    display: flex;
+    margin: 4vh;
+    margin-top: 6vh;
+
+}
+
+#navegacao h3 {
+    font-family: poppins;
+    font-weight: 300;
+}
+
+#navegacao div {
+    margin: 5vh;
+    cursor: pointer;
+}
+
+.menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    color: #333;
+    display: none;
+}
+
+.modal {
+    display: none;
+    /* Oculta o modal inicialmente */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 40px;
+    color: #333;
+    cursor: pointer;
+}
+
+.modal ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    margin: 50px 30px;
+}
+
+.modal ul li {
+    margin: 18px 0;
+}
+
+.modal ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+}
+
+.logoModal img {
+    width: 85px;
+}
+
+.logoModal {
+    margin-top: 40px;
+}
+
+
+
+/*TEA*/
+.comeco-tea {
+    margin-top: 200px;
+}
+
+.tea {
+    font-size: 8vh;
+    font-family: 'Poppins';
+    margin-top: -30vh;
+    margin-left: 40vh;
+
+}
+
+.transtorno {
+    margin-left: 25vh;
+}
+
+.tea-coracao {
+    width: 350px;
+    height: auto;
+    margin-left: 110vh;
+}
+
+/* Coração pulsante */
+.heart-image {
+    /* Ajuste o tamanho conforme necessário */
+    animation: pulse 4s infinite;
+    /* Ajuste a duração para 2s para uma pulsação mais lenta */
+}
+
+/* Animação de pulsação */
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+/*oque é*/
+
+.meio-pagina {
+    width: 1510px;
+    height: 400px;
+    margin-top: 300px;
+    background-color: #E8FAF0;
+}
+
+.h1-meio-pagina {
+    font-family: 'Poppins';
+    font-weight: 100;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+
+}
+
+.quebra-cabeca1,
+.quebra-cabeca2,
+.quebra-cabeca3 {
+    width: 50px;
+    height: auto;
+}
+
+.quebra-cabeca1 {
+    margin-left: 80px;
+    margin-top: 30px;
+}
+
+.texto1 {
+    margin-top: -40px;
+    margin-left: 160px;
+}
+
+.quebra-cabeca2 {
+    margin-left: 150px;
+    margin-top: 40px;
+}
+
+.texto2 {
+    margin-top: -40px;
+    margin-left: 230px;
+}
+
+.quebra-cabeca3 {
+    margin-left: 220px;
+    margin-top: 50px;
+}
+
+.texto3 {
+    margin-top: -50px;
+    margin-left: 280px;
+}
+
+/*autismo nas escolas*/
+.autismo-escolas img {
+    height: auto;
+    width: 400px;
+    margin-top: 200px;
+}
+
+.autismo {
+    font-size: 35px;
+    margin-top: -300px;
+    margin-left: 60px;
+}
+
+.bolinha1,
+.bolinha2,
+.bolinha3 {
+    border: 2px solid #FED3DA;
+    background-color: #FED3DA;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+
+}
+
+.bolinha1 {
+    margin-top: -110px;
+    margin-left: 600px;
+}
+
+.texto-1 {
+    margin-left: 650px;
+    margin-top: -22px;
+
+}
+
+.bolinha2 {
+    margin-top: 45px;
+    margin-left: 600px;
+
+}
+
+.texto-2 {
+    margin-left: 650px;
+    margin-top: -20px;
+}
+
+.bolinha3 {
+    margin-top: 40px;
+    margin-left: 600px;
+}
+
+.texto-3 {
+    margin-left: 650px;
+    margin-top: -22px;
+}
+
+/*Doenças*/
+
+.final {
+    width: 100%;
+    margin-top: 303px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.linha1,
+.linha2 {
+    width: 500px;
+    height: 50px;
+}
+
+.doencas-invisiveis {
+    width: 10%;
+}
+
+.p-doencas {
+    font-size: 25px;
+    font-family: 'Poppins';
+    font-weight: 100;
+}
+
+
+.quadrados-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 80px;
+}
+
+.quadrado {
+    width: 150px;
+    height: 150px;
+    background-color: #FFE3AE;
+    border: 1px solid #FFBE40;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: background-color 0.3s;
+    position: relative;
+    font-size: 18px;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Poppins';
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+    /* Adicionando transições */
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Efeito de relevo */
+}
+
+.quadrado:hover {
+    background-color: #ffbf405b;
+    transform: translateY(-2px);
+    /* Leve movimento para cima ao passar o mouse */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    /* Sombras mais intensas ao passar o mouse */
+}
+
+.info {
+    position: absolute;
+    top: -50px;
+    /* Posiciona acima do quadrado */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    height: 230px;
+    background-color: #fff;
+    border: 2px solid #FFCB67;
+    color: black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    z-index: 1;
+    /* Certifica-se de que o quadrado informativo esteja acima */
+}
+
+/* FOOTER */
+
+.girassol {
+    margin-top: 20VH;
+}
+
+.rodape {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    margin-top: 7vh;
+    width: 96vh;
+    margin-left: 56vh;
+    justify-content: space-around;
+}
+
+footer {
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+a {
+
+    text-decoration: none;
+    color: #000000;
+}
+
+
+.linha {
+    width: 202vh;
+    margin-top: 8vh;
+    border: none;
+    height: 2px;
+    background-color: #D7D7D7;
+
+}
+
+.ultimo-texto p {
+    margin-top: 10vh;
+    color: #8F8F8F;
+}
