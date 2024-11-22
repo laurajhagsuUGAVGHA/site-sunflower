@@ -739,21 +739,22 @@ a {
         margin-top: 30vh;
     }
 
-    .box h2 {
-        text-align: center;
-        font-size: 5vh;
-    }
 
     .boxJuntas {
         text-align: center;
-        display: flex;
+        display: block;
         justify-content: center;
         align-items: center;
-        width: 60vh;
+        width: 100%;
 
     }
 
-
+.box h2{
+    font-size: 15px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
 
     .rodape {
         margin: 0;
@@ -776,7 +777,7 @@ a {
     }
 
     .linha {
-        width: 67vh;
+        width: 100%;
 
 
     }
