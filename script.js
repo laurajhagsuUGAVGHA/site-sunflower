@@ -16,6 +16,7 @@ function showSlide(index) {
     slides[slideIndex].classList.add("active");
     for (let i = 0; i < texts.length; i++) {
         texts[i].style.display = "none";
+        
     }
     texts[slideIndex].style.display = "block";
 }

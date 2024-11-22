@@ -33,7 +33,7 @@
         /* Garante que o cabeçalho fique acima de outros elementos */
         padding: 10px 0;
     }
-    
+
     .container {
         display: flex;
         height: 19vh;
@@ -42,57 +42,57 @@
         background-color: #FFF;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.396);
     }
-    
+
     /* ESSA É A PARTE DE LOGO E TITULO SUNFLOWER */
     .logo-titulo {
         display: flex;
         margin-top: 2vh;
     }
-    
+
     .imagem {
         max-width: 50%;
     }
-    
+
     .imagem img {
         width: 50%;
         margin-left: 5vh;
-    
+
     }
-    
+
     .titulo {
         margin-top: 2.1vh;
         margin-left: 1vh;
         font-family: Belleza;
         font-weight: 300;
         font-size: 25px;
-    
+
     }
-    
+
     /* ESSA É A PARTE DE INICIO SOBRE ...... */
     #navegacao {
         display: flex;
         margin: 4vh;
         margin-top: 6vh;
-    
+
     }
-    
+
     #navegacao h3 {
         font-family: poppins;
         font-weight: 300;
     }
-    
+
     #navegacao div {
         margin: 5vh;
         cursor: pointer;
     }
-    
+
     .menu-icon {
         font-size: 30px;
         cursor: pointer;
         color: #333;
         display: none;
     }
-    
+
     .modal {
         display: none;
         /* Oculta o modal inicialmente */
@@ -106,7 +106,7 @@
         justify-content: center;
         align-items: center;
     }
-    
+
     .modal-content {
         background-color: #fff;
         width: 100%;
@@ -115,7 +115,7 @@
         text-align: center;
         position: relative;
     }
-    
+
     .close-btn {
         position: absolute;
         top: 10px;
@@ -124,29 +124,29 @@
         color: #333;
         cursor: pointer;
     }
-    
+
     .modal ul {
         list-style: none;
         padding: 0;
         text-align: left;
         margin: 50px 30px;
     }
-    
+
     .modal ul li {
         margin: 18px 0;
     }
-    
+
     .modal ul li a {
         text-decoration: none;
         color: #000;
         font-size: 18px;
     }
-    
-    .logoModal img{
+
+    .logoModal img {
         width: 85px;
     }
-    
-    .logoModal{
+
+    .logoModal {
         margin-top: 40px;
     }
 
@@ -200,15 +200,17 @@
 
 
     }
-.button-palavra{
-    border: 2px solid #7ac9d0;
+
+    .button-palavra {
+        border: 2px solid #7ac9d0;
         width: 120px;
         height: 30px;
         border-radius: 20px;
         background-color: #7ac9d0;
         margin-left: 350px;
         margin-top: 20px;
-}
+    }
+
     .button-quiz {
         border: 2px solid #FED3DA;
         width: 120px;
@@ -548,33 +550,117 @@
         margin-top: 10vh;
         color: #8F8F8F;
     }
-    
+
     @media (max-width: 720px) {
         .menu-icon {
             display: block;
             margin: 2vh 5vh 0 0;
         }
-    
+
         .imagem img {
             width: 40%;
         }
-    
+
         .container {
             height: 16vh;
         }
-    
+
         .logo-titulo {
             display: flex;
             align-items: center;
         }
-    
+
         .titulo {
             margin: 0;
         }
-    
+
         #navegacao {
             display: none;
             /* Oculta a navegação no mobile */
         }
+
+        .jogos-educacionais {
+            position: relative;
+            display: inline-block;
+            width: 100%;
+        }
+
+        .jogos-verde {
+            width: 70%;
+            height: 50%;
+            max-width: 100%;
+        }
+
+        .jogos-imagem1 {
+            position: absolute;
+            top: 65%;
+            left: 60%;
+            transform: translate(-50%, -50%);
+            width: 18%;
+            /* Ajusta a largura para caber dentro do contêiner */
+            max-width: 60%;
+            /* Limita o tamanho máximo */
+        }
+
+        .text-jogos {
+            position: absolute;
+            font-family: 'Poppins';
+            font-size: 35px;
+            color: #000000A9;
+            top: 30%;
+            margin-left: 100px;
+        }
+
+        .img-quiz {
+            width: 250px;
+            margin-top: 150px;
+            margin-left: 500px;
+        }
+
+        .button-quiz {
+            margin-left: 570px;
+            margin-top: 250px;
+        }
+
+        .p-quiz {
+            font-size: 0px;
+        }
+
+        .quiz-aprendizado h1 {
+            margin-left: 590px;
+            margin-top: -250px;
+        }
+
+        .img-velha{
+            margin-left: -0px;
+            margin-top: 20px;
+        }
+        .jogo-velha p{
+            font-size: 0px;
+        }
+        .jogo-velha h1{
+            font-size: 30px;
+            margin-left: 400px;
+            margin-top: 100px;
+            /* text-align: center;
+            justify-content: center;
+            align-items: center; */
+        }
+        .button-velha{
+            /* text-align: center;
+            justify-content: center;
+            align-items: center; */
+            margin-top: 200px;
+        }
+
+        .jogo-memoria p{
+            font-size: 0px;
+        }
+      .jogo-memoria h1{
+        margin-left: 390px;
+        margin-top: -300px;
+      }
+      .button-memoria{
+      margin-top: 250px;
+      }
     }
-  
