@@ -463,15 +463,15 @@ a {
 
     #navegacao {
         display: none;
-
     }
 
     .tea-coracao {
         width: 150px;
     }
-.comeco-tea{
-    display: flex;
-}
+
+    .comeco-tea {
+        display: flex;
+    }
 
     .meio-pagina {
         width: 740px;
@@ -479,7 +479,7 @@ a {
         margin-top: 300px;
         background-color: #E8FAF0;
     }
-    
+
     .h1-meio-pagina {
         font-family: 'Poppins';
         font-weight: 100;
@@ -487,14 +487,48 @@ a {
         align-items: center;
         justify-content: center;
         padding: 20px;
-    
     }
-    
+
     .quebra-cabeca1,
     .quebra-cabeca2,
     .quebra-cabeca3 {
         width: 50px;
         height: auto;
     }
-    
+
+    .autismo-escolas img {
+        width: 300px;
+        margin-top: 100px;
+    }
+
+    .autismo {
+        font-size: 25px;
+        margin-top: -200px;
+        margin-left: 30px;
+    }
+
+    .quadrados-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .quadrado {
+        width: 100px;
+        height: 100px;
+        font-size: 14px;
+    }
+
+    .rodape {
+        flex-direction: column;
+        margin: 5vh 0;
+    }
+
+    .linha {
+        width: 100%;
+    }
+
+    .ultimo-texto p {
+        margin-top: 5vh;
+        font-size: 12px;
+    }
 }
