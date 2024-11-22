@@ -156,16 +156,13 @@ header {
 /*TEA*/
 .comeco-tea {
     margin-top: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
 }
 
 .tea {
     font-size: 8vh;
     font-family: 'Poppins';
     margin-top: -30vh;
-    /* margin-left: 40vh; */
+    margin-left: 40vh;
 
 }
 
@@ -474,7 +471,6 @@ a {
     }
 .comeco-tea{
     display: flex;
-
 }
 
     .meio-pagina {
