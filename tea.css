@@ -527,7 +527,9 @@ a {
         text-align: center;
     }
   
-
+.linha1, .linha2{
+    width: 0;
+}
     .bolinha1,
     .bolinha2,
     .bolinha3 {
