@@ -438,7 +438,177 @@ a {
     color: #8F8F8F;
 }
 
-@media (max-width: 720px) {
+
+
+@media screen and (max-width: 720px) {
+    .menu-icon {
+        display: block;
+        margin: 2vh 5vh 0 0;
+    }
+
+    .imagem img {
+        width: 45%;
+    }
+
+    .container {
+        height: 16vh;
+    }
+
+    .logo-titulo {
+        display: flex;
+        align-items: center;
+    }
+
+    .titulo {
+        margin: 0;
+    }
+
+    #navegacao {
+        display: none;
+
+    }
+
+    .comeco-tea {
+        margin-top: 150px;
+    }
+
+    .tea {
+        font-size: 6vh;
+        margin-top: 3vh;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .transtorno {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .tea-coracao {
+        width: 0%;
+        margin-top:200px ;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .meio-pagina {
+        width: 90%;
+        height: auto;
+        margin-top: 100px;
+        padding: 20px;
+    }
+
+    .h1-meio-pagina {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .quebra-cabeca1,
+    .quebra-cabeca2,
+    .quebra-cabeca3 {
+        width: 30px;    }
+
+    .texto1,
+    .texto2,
+    .texto3 {
+        margin-right: 3px;
+        margin-top: 5px;
+        font-size: 10px;
+    }
+
+    .autismo-escolas img {
+        width: 60%;
+        margin-top: 50px;
+    }
+
+    .autismo {
+        font-size: 20px;
+        margin-left: 0;
+        text-align: center;
+    }
+  
+
+    .bolinha1,
+    .bolinha2,
+    .bolinha3 {
+        width: 20px;
+        height: 20px;
+        margin: 10px auto;
+    }
+
+    .texto-1,
+    .texto-2,
+    .texto-3 {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .quadrados-container {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .quadrado {
+        width: 100px;
+        height: 100px;
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+    .info {
+        width: 0%;
+        height: auto;
+        font-size: 0px;
+        padding: 0px;
+    }
+
+    .rodape {
+        flex-direction: column;
+        margin: 20px auto;
+        width: 100%;
+    }
+
+    .linha {
+        width: 90%;
+    }
+
+    .ultimo-texto p {
+        margin-top: 20px;
+        font-size: 14px;
+    }
+}
+
+/* @media (max-width: 720px) {
+    .menu-icon {
+        display: block;
+        margin: 2vh 5vh 0 0;
+    }
+
+    .imagem img {
+        width: 45%;
+    }
+
+    .container {
+        height: 16vh;
+    }
+
+    .logo-titulo {
+        display: flex;
+        align-items: center;
+    }
+
+    .titulo {
+        margin: 0;
+    }
+
+    #navegacao {
+        display: none;
+
+    }
+} */
+
+/* @media (max-width: 720px) {
     .menu-icon {
         display: block;
         margin: 2vh 5vh 0 0;
@@ -531,4 +701,4 @@ a {
         margin-top: 5vh;
         font-size: 12px;
     }
-}
+} */
