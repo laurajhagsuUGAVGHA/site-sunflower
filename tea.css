@@ -222,7 +222,7 @@ header {
     height: auto;
 }
 
-.quebra-cabeca1 {
+/* .quebra-cabeca1 {
     margin-left: 80px;
     margin-top: 30px;
 }
@@ -250,7 +250,7 @@ header {
 .texto3 {
     margin-top: -50px;
     margin-left: 280px;
-}
+} */
 
 /*autismo nas escolas*/
 .autismo-escolas img {
@@ -486,7 +486,7 @@ a {
 
     .tea-coracao {
         width: 0%;
-        margin-top:200px ;
+        margin-top: 200px;
         margin: 0 auto;
         display: block;
     }
@@ -506,12 +506,14 @@ a {
     .quebra-cabeca1,
     .quebra-cabeca2,
     .quebra-cabeca3 {
-        width: 30px;    }
+        width: 30px;
+    }
+ 
 
     .texto1,
     .texto2,
     .texto3 {
-        margin-right: 3px;
+        margin-right: 0px;
         margin-top: 5px;
         font-size: 10px;
     }
@@ -526,10 +528,12 @@ a {
         margin-left: 0;
         text-align: center;
     }
-  
-.linha1, .linha2{
-    width: 0;
-}
+
+    .linha1,
+    .linha2 {
+        width: 0;
+    }
+
     .bolinha1,
     .bolinha2,
     .bolinha3 {
