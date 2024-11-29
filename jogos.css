@@ -511,7 +511,7 @@
         .jogo-memoria h1,
         .jogo-velha h1,
         .quiz-aprendizado h1 {
-            /* font-size: 1.8rem; */
+          font-size: 25px; 
             text-align: center;
             margin: 10px auto;
         }
