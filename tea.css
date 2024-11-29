@@ -215,44 +215,31 @@ header {
 
 }
 
+.texto1,
+.texto2,
+.texto3 {
+    font-size: 18px;
+    margin: 20px;
+}
+
 .quebra-cabeca1,
 .quebra-cabeca2,
 .quebra-cabeca3 {
-    width: 50px;
+    width: 40px;
     height: auto;
+    
 }
 
-/* .quebra-cabeca1 {
-    margin-left: 80px;
-    margin-top: 30px;
+.quebra1,
+.quebra2,
+.quebra3 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
 }
 
-.texto1 {
-    margin-top: -40px;
-    margin-left: 160px;
-}
 
-.quebra-cabeca2 {
-    margin-left: 150px;
-    margin-top: 40px;
-}
-
-.texto2 {
-    margin-top: -40px;
-    margin-left: 230px;
-}
-
-.quebra-cabeca3 {
-    margin-left: 220px;
-    margin-top: 50px;
-}
-
-.texto3 {
-    margin-top: -50px;
-    margin-left: 280px;
-} */
-
-/*autismo nas escolas*/
 .autismo-escolas img {
     height: auto;
     width: 400px;
@@ -492,15 +479,15 @@ a {
     }
 
     .meio-pagina {
-        width: 90%;
-        height: auto;
+        width: 100%;
+        height: 600px;
         margin-top: 100px;
         padding: 20px;
     }
 
     .h1-meio-pagina {
-        font-size: 20px;
-        padding: 10px;
+        font-size: 25px;
+        padding: 20px;
     }
 
     .quebra-cabeca1,
@@ -508,22 +495,30 @@ a {
     .quebra-cabeca3 {
         width: 30px;
     }
- 
+
+    .texto1 {
+        margin: 25px;
+    }
+
+    .texto2 {
+        margin: 25px;
+    }
 
     .texto1,
     .texto2,
     .texto3 {
-        margin-right: 0px;
-        margin-top: 5px;
-        font-size: 10px;
+        margin-left: 40px;
+        margin-top: 0px;
+        font-size: 15px;
     }
 
     .autismo-escolas img {
-        width: 60%;
-        margin-top: 50px;
+        width: 0;
+        margin-top: 0px;
     }
 
     .autismo {
+        margin-top: 80px;
         font-size: 20px;
         margin-left: 0;
         text-align: center;
@@ -537,17 +532,34 @@ a {
     .bolinha1,
     .bolinha2,
     .bolinha3 {
-        width: 20px;
-        height: 20px;
-        margin: 10px auto;
+        width: 13px;
+        height: 13px;
+        margin: 13px 5px;
+        margin-top: 0px;
+        margin-left: 0px;
+
+    }
+
+    .bola1,
+    .bola2,
+    .bola3 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
     }
 
     .texto-1,
     .texto-2,
     .texto-3 {
-        margin-left: 0;
+        margin: 13px;
+        font-size: 15px;
+        margin-left: 0px;
         text-align: center;
+        margin-top: 0px;
     }
+
+
 
     .quadrados-container {
         flex-direction: column;
@@ -562,6 +574,15 @@ a {
         margin-bottom: 30px;
     }
 
+    .final {
+        margin-top: 150px;
+    }
+
+    .doencas-invisiveis {
+        width: 100px;
+
+    }
+
     .info {
         width: 0%;
         height: auto;
@@ -571,19 +592,24 @@ a {
 
     .rodape {
         flex-direction: column;
-        margin: 20px auto;
-        width: 100%;
+        margin: 0px auto;
+        width: 0%;
     }
 
     .linha {
-        width: 90%;
+        width: 0%;
     }
 
     .ultimo-texto p {
-        margin-top: 20px;
-        font-size: 14px;
+        margin-top: 0px;
+        font-size: 0px;
+    }
+
+    .rodape {
+        font-size: 0px;
     }
 }
+
 
 /* @media (max-width: 720px) {
     .menu-icon {
