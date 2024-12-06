@@ -82,8 +82,9 @@ header {
 }
 
 #navegacao div {
-    margin: 5vh;
+    margin: 0vh;
     cursor: pointer;
+    margin-right: 20vh;
 }
 
 .menu-icon {

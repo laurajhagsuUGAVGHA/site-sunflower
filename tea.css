@@ -76,15 +76,15 @@ header {
     margin-top: 6vh;
 
 }
-
 #navegacao h3 {
     font-family: poppins;
     font-weight: 300;
 }
 
 #navegacao div {
-    margin: 5vh;
+    margin: 0vh;
     cursor: pointer;
+    margin-right: 20vh;
 }
 
 .menu-icon {
