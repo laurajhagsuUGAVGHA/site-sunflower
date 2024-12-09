@@ -85,7 +85,7 @@
     #navegacao div {
         margin: 0vh;
         cursor: pointer;
-        margin-right: 20vh;
+        margin-right: 10vh;
     }
 
     .menu-icon {
@@ -194,6 +194,7 @@
         border-radius: 20px;
         background-color: #7ac9d0;
         margin-top: 20px;
+        margin-left: 260px;
     }
 
     .button-quiz {
@@ -263,6 +264,10 @@
         margin-top: 40px;
     }
 
+    .jogo-palavra h1 {
+        margin-left: 200px;
+    }
+
     .memoriaDiv {
         display: flex;
         flex-direction: column;
@@ -282,18 +287,17 @@
     }
 
     .palavraDiv {
-        display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-top: 100px;
+        margin-top: 20px;
     }
 
     .jogo-palavra {
         display: flex;
         align-items: center;
         justify-content: space-around;
-        
+
     }
 
     .p-palavra {
@@ -301,8 +305,9 @@
     }
 
     .img-palavra {
+        /* margin-left: 700px; */
         width: 350px;
-        margin-top: 100px;
+        /* margin-top: 50px; */
     }
 
     .img-memoria {
@@ -478,6 +483,7 @@
         }
 
         .img-palavra {
+            margin-top: 100px;
             width: 80%;
             max-width: 250px;
             margin: 20px auto;
