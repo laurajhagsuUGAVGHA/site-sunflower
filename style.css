@@ -635,7 +635,9 @@ a {
 
 
 
-
+.inclusao{
+    font-size: 4vh;
+}
 
 
     .titulo-dois {
@@ -670,7 +672,6 @@ a {
 
     .container-laranja {
 
-        width: 60vh;
         flex-direction: column;
         height: auto;
         padding: 20px;
@@ -679,6 +680,10 @@ a {
     .imagemCrian img {
         width: 100%;
         height: auto;
+    }
+
+    .objetivo h2 {
+        font-size: 4vh;
     }
 
     .objetivo {
@@ -721,7 +726,7 @@ a {
         display: flex;
         justify-content: center;
         flex-direction: column;
-       width: 350px;
+        width: 300px;
         height: 250vh;
 
     }
@@ -732,6 +737,7 @@ a {
     }
 
     .inicio-img {
+
         margin-top: -5vh;
     }
 
@@ -753,6 +759,7 @@ a {
         justify-content: center;
         align-items: center;
         width: 100%;
+        margin-left: 50px;
 
     }
 
