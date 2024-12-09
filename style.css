@@ -636,7 +636,11 @@ a {
 
 
 
-
+.inclusao{
+    font-size: 4vh;
+    text-align: center;
+margin-left: 2vh;
+}
 
     .titulo-dois {
         margin-top: -120vh;
@@ -645,6 +649,10 @@ a {
 
     .importancia {
         font-size: 3vh;
+        width: 100%;
+    text-align: center;
+    justify-content: center;
+    
     }
 
     .icones {
@@ -654,7 +662,6 @@ a {
         flex-direction: column;
         margin-top: 20vh;
     }
-
     .icone2,
     .icone3 {
         margin-top: 10vh;
@@ -663,14 +670,14 @@ a {
     .texto {
         align-items: center;
         text-align: center;
-        width: 100%;
+
         margin: 10px 0;
         line-height: normal;
     }
 
     .container-laranja {
 
-        width: 60vh;
+        width: 80vh;
         flex-direction: column;
         height: auto;
         padding: 20px;
@@ -685,6 +692,7 @@ a {
         width: auto;
         font-size: 3vh;
         text-align: center;
+       margin-left: 8vh;
     }
 
 
@@ -753,6 +761,7 @@ a {
         justify-content: center;
         align-items: center;
         width: 100%;
+        margin-left: 8vh;
 
     }
 
