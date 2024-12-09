@@ -428,6 +428,7 @@
             flex-direction: column-reverse;
         }
 
+        
         .jogo-palavra {
             width: 100%;
             display: flex;
@@ -435,7 +436,7 @@
         }
 
         .jogo-memoria,
-        .jogo-palavra,
+
         .quiz-aprendizado {
             width: 100%;
             flex-direction: column;

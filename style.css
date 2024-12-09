@@ -143,11 +143,11 @@ header {
     font-size: 18px;
 }
 
-.logoModal img{
+.logoModal img {
     width: 85px;
 }
 
-.logoModal{
+.logoModal {
     margin-top: 40px;
 }
 
@@ -669,6 +669,8 @@ a {
     }
 
     .container-laranja {
+
+        width: 60vh;
         flex-direction: column;
         height: auto;
         padding: 20px;
@@ -719,14 +721,14 @@ a {
         display: flex;
         justify-content: center;
         flex-direction: column;
-        max-width: 100%;
+       width: 350px;
         height: 250vh;
 
     }
 
     .jogos {
         margin-top: -25vh;
-        margin-left: 6vh;
+        margin-right: 2vh;
     }
 
     .inicio-img {
@@ -734,12 +736,16 @@ a {
     }
 
     .box {
-        margin-left: -17vh;
+        margin-right: 20vh;
         align-items: center;
         text-align: center;
-        margin-top: 30vh;
+        margin-top: 20px;
     }
 
+    .text-titulo {
+        text-align: center;
+        align-items: center;
+    }
 
     .boxJuntas {
         text-align: center;
@@ -750,16 +756,16 @@ a {
 
     }
 
-.box h2{
-    font-size: 15px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-}
+    .box h2 {
+        font-size: 15px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
 
     .rodape {
         margin: 0;
-        width: 100%;
+        width: 0;
     }
 
 
@@ -769,8 +775,9 @@ a {
 
     footer {
         display: flex;
-        font-size: 2;
+        font-size: 0;
         top: 8vh;
+        width: 100%;
     }
 
     .ultimo-texto {
