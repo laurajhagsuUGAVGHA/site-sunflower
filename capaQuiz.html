@@ -164,9 +164,9 @@
     }
 
 
-#voltar{
-    display: none;
-}
+    #voltar {
+        display: none;
+    }
 
 
 
@@ -186,16 +186,17 @@
             display: none;
         }
 
-        #voltar{
-    display: inline;
-}
+        #voltar {
+            display: inline;
+            cursor: pointer;
+        }
     }
 </style>
 
 <body>
     <header>
         <div class="voltar" id="voltarParaInicio">
-            <span class="material-icons" id="voltar">arrow_back</span>
+         <span class="material-icons" id="voltar" onclick="window.location.href='jogos.html'">arrow_back</span>
 
             <h2>Escolha a categoria</h2>
             <div class="linha"></div>

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jogo da Velha</title>
+    <title>Jogo da Velhab - Sunflower</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="jogoDaVelha.css">
     <link rel="icon" href="img/logo.png">
@@ -129,6 +129,7 @@
             const combinacoesVencedoras = [
                 [0, 1, 2], [3, 4, 5], [6, 7, 8], // Linhas
                 [0, 3, 6], [1, 4, 7], [2, 5, 8], // Colunas
+                
                 [0, 4, 8], [2, 4, 6]             // Diagonais
             ];
 
@@ -201,7 +202,7 @@
         document.getElementById("escolherX").addEventListener("click", () => {
             jogadorSimbolo = 'X';
             botSimbolo = 'O';
-            paginaEscolhaJogador.classList.add("oculto");
+            paginaEscolhaJogador.classList.add("oculto"); 
             paginaTabuleiro.classList.remove("oculto");
             reiniciarJogo();
         });
@@ -223,7 +224,7 @@
         });
         document.getElementById("voltarParaInicio").onclick = function() {
             // Redirecionar para a página inicial (altere o nome para a página desejada)
-            window.location.replace("inicioJogo.html"); // Certifique-se de que "inicio.html" seja o nome correto
+            window.location.replace("index.html"); // Certifique-se de que "inicio.html" seja o nome correto
         };
     </script>
 </body>

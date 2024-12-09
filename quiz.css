@@ -13,7 +13,8 @@ body {
     align-items: center;
     min-height: 100vh;
     background: radial-gradient(circle, #FFA193, #FBD6D1);
-    overflow: hidden;
+    
+    overflow-y: auto;
 }
 
 
@@ -154,10 +155,11 @@ main  {
     cursor: pointer; /* Cursor como ponteiro */
 }
 
-.imagem-pequena {
+.continente {
     width: 50%; /* Ajuste a largura conforme necessário */
     height: auto; /* Mantém a proporção da imagem */
 }
+
 
 
 @media screen and (max-width: 365px) {
@@ -219,5 +221,43 @@ main  {
     
     .imagem-pequena {
         width: 100%; /* Ajuste de largura para a imagem */
+    }
+}
+
+@media screen and (max-width: 760px) {
+    body {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        align-items: center;
+        padding: 20px;
+        overflow-y: auto; /* Permite rolagem vertical para conteúdo longo */
+    }
+    .fundo-branco-quiz{
+        width:50vh;
+        padding: 20px;
+        height: 92vh; /* Permite que a altura se ajuste ao conteúdo */
+    }
+    .alternativa {
+        width: 40vh;
+          font-size: 2.2vh; /* Ajuste no tamanho da fonte */
+          height: 5vh; /* Deixa a altura flexível conforme o conteúdo */
+          padding: 8px;
+          font-size: 1.8vh;
+      }
+   
+    
+      .modal-conteudo {
+        width: 80%; /* Modal ocupa menos espaço horizontal */
+        height: auto; /* Altura ajustável ao conteúdo */
+    }
+
+    #reiniciar, #paginaInicialJogos {
+        width: 100%; /* Botões ocupam toda a largura do modal */
+        font-size: 2.3vh; /* Fonte dos botões no modal */
+    }
+
+    .fechar {
+        font-size: 24px;
     }
 }

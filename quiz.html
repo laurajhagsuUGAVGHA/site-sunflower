@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - Sunflower</title>
+    <link rel="stylesheet" href="quiz.css">
+    <link rel="icon" href="img/logo.png">
+</head>
+
+<body>
+    
+    <div class="container">
+        <div class="fundo-branco-quiz">
+            <h3 id="pergunta">Quem ganhou a copa do mundo de 2022?</h3>
+            <img class="imagem-quiz" src="" alt="" id="imagemPergunta">
+
+            <div class="alternativas">
+                <button class="alternativa" data-letra="A">Alternativa A</button>
+                <button class="alternativa" data-letra="B">Alternativa B</button>
+                <button class="alternativa" data-letra="C">Alternativa C</button>
+                <button class="alternativa" data-letra="D">Alternativa D</button>
+                <button class="alternativa" data-letra="E">Alternativa E</button>
+            </div>
+            <div class="botoes">
+                <button id="buttonVoltar" onclick="window.location.href='capaQuiz.html?'">Sair do Jogo</button>
+                <button id="pular" class="botao-pular">Pular Pergunta</button>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div id="modalResultado" class="modal">
+            <div class="modal-conteudo">
+                <span class="fechar" id="fecharModal">&times;</span>
+                <h3>Resultados</h3>
+                <p id="tempoFinal"></p>
+                <p id="acertos"></p>
+                <h4>Histórico:</h4>
+                <p id="historico"></p>
+                <button id="reiniciar">Reiniciar Quiz</button>
+                <button id="paginaInicialJogos"onclick="window.location.href='capaQuiz.html'">Voltar ao Início</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let perguntaAtual = 0;
+        let acertos = 0;
+        let tempoRestante = 0; // Cronômetro de controle do tempo
+        let timer;
+        let perguntas = []; // Array para armazenar as perguntas da categoria escolhida
+
+        // Função para iniciar o cronômetro
+        function iniciarCronometro() {
+            tempoRestante = 0;
+            timer = setInterval(() => {
+                tempoRestante++;
+            }, 1000);
+        }
+
+        // Função para carregar perguntas do JSON
+        function carregarPerguntas(categoria) {
+            fetch('perguntas.json')
+                .then(response => response.json())
+                .then(data => {
+                    perguntas = data[categoria]; // Carrega perguntas da categoria escolhida
+                    carregarPergunta(); // Carrega a primeira pergunta
+                    iniciarCronometro(); // Inicia o cronômetro ao carregar as perguntas
+                })
+                .catch(error => console.error('Erro ao carregar perguntas:', error));
+        }
+
+        // Função para carregar a pergunta
+        function carregarPergunta() {
+            const perguntaElement = document.getElementById("pergunta");
+            const imagemElement = document.getElementById("imagemPergunta");
+            const alternativasElement = document.querySelectorAll(".alternativa");
+
+            if (perguntaAtual < perguntas.length) {
+                const perguntaAtualData = perguntas[perguntaAtual];
+                perguntaElement.textContent = perguntaAtualData.pergunta;
+                imagemElement.src = `img/${perguntaAtualData.imagem}`; // Atualize para usar o nome da imagem específico de cada pergunta
+
+                alternativasElement.forEach((alternativa, index) => {
+                    alternativa.textContent = perguntaAtualData.alternativas[index];
+                    alternativa.classList.remove('correta', 'errada');
+                    alternativa.onclick = () => verificarResposta(index);
+                });
+            } else {
+                finalizarQuiz();
+            }
+        }
+
+        // Função para verificar a resposta
+        function verificarResposta(indice) {
+            const alternativasElement = document.querySelectorAll(".alternativa");
+            if (indice === perguntas[perguntaAtual].resposta) {
+                acertos++;
+                alternativasElement[indice].classList.add('correta'); // Marca como correta
+            } else {
+                alternativasElement[indice].classList.add('errada'); // Marca como errada
+                alternativasElement[perguntas[perguntaAtual].resposta].classList.add('correta'); // Mostra a correta
+            }
+            perguntaAtual++;
+            setTimeout(carregarPergunta, 1000); // Muda para a próxima pergunta após 1 segundo
+        }
+
+        // Função para finalizar o quiz
+        function finalizarQuiz() {
+            clearInterval(timer);
+            document.querySelector(".fundo-branco-quiz").classList.add("hidden");
+            mostrarResultadoModal();
+        }
+
+        // Função para mostrar o modal de resultados
+        function mostrarResultadoModal() {
+            const modal = document.getElementById("modalResultado");
+            const tempoFinal = document.getElementById("tempoFinal");
+            const acertosElement = document.getElementById("acertos");
+            const historicoElement = document.getElementById("historico");
+
+            // Formatar o tempo para minutos e segundos
+            const minutos = Math.floor(tempoRestante / 60);
+            const segundos = tempoRestante % 60;
+
+            tempoFinal.textContent = `Você completou o quiz em ${minutos} minutos e ${segundos} segundos.`;
+            acertosElement.textContent = `Você acertou ${acertos} de ${perguntas.length} perguntas.`;
+            historicoElement.textContent = `Última vez: ${acertos} acertos em ${minutos} minutos e ${segundos} segundos.`;
+
+            modal.style.display = "block"; // Mostra o modal
+        }
+
+        // Fechar o modal
+        document.getElementById("fecharModal").onclick = function () {
+            document.getElementById("modalResultado").style.display = "none";
+        }
+
+        // Pular pergunta
+        document.getElementById("pular").onclick = function () {
+            perguntaAtual++;
+            carregarPergunta();
+        }
+
+        // Reiniciar o quiz
+        document.getElementById("reiniciar").onclick = function () {
+            perguntaAtual = 0;
+            acertos = 0;
+            tempoRestante = 0; // Reinicia o tempo
+            document.querySelector(".fundo-branco-quiz").classList.remove("hidden");
+            document.getElementById("modalResultado").style.display = "none"; // Esconde o modal
+            iniciarCronometro();
+            carregarPergunta();
+        };
+
+        // Função para obter parâmetros da URL
+        function obterCategoria() {
+            const params = new URLSearchParams(window.location.search);
+            return params.get('categoria');
+        }
+
+        // Iniciar o quiz ao carregar a página com a categoria selecionada
+        const categoriaSelecionada = obterCategoria();
+        carregarPerguntas(categoriaSelecionada);
+    </script>
+</body>
+
+</html>
