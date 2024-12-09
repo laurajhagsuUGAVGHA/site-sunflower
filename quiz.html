@@ -3,167 +3,225 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz - Sunflower</title>
-    <link rel="stylesheet" href="quiz.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="icon" href="img/logo.png">
+    <title>Categoria</title>
+
 </head>
 
+<style>
+    @font-face {
+        font-family: Nunito;
+        src: url(font/Nunito-VariableFont_wght.ttf);
+    }
+
+    body {
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    header {
+        margin-top: 5vh;
+    }
+
+    .container-botao {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 13vh;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+
+
+    .linha {
+        height: 0.20vh;
+        width: 100%;
+        background-color: #CACACA;
+    }
+
+    .container-botao button {
+        width: 50vh;
+        height: 10vh;
+        font-family: 'Nunito';
+        font-weight: 700;
+        font-size: 3vh;
+        color: white;
+        border-radius: 15px;
+        border: none;
+    }
+
+    .imagemGirassol {
+        display: flex;
+        justify-content: left;
+        margin-top: -20.75vh;
+        margin-left: -2vh;
+    }
+
+
+    .temaGeografia {
+        background-color: #ee6868;
+        border: 2px solid #c55c5c;
+        transition: transform 0.3s, background-color 0.2s;
+        /* Adicionando transição para a cor de fundo */
+    }
+
+    .temaGeografia:hover {
+        transform: scale(1.05);
+    }
+
+    .temaGeografia:active {
+        background-color: #d95757;
+        /* Cor mais escura ao clicar */
+    }
+
+    .temaHistoria {
+        background-color: #f29391;
+        border: 2px solid #d1878e;
+        transition: transform 0.3s, background-color 0.2s;
+    }
+
+    .temaHistoria:hover {
+        transform: scale(1.05);
+    }
+
+    .temaHistoria:active {
+        background-color: #d27e7e;
+        /* Cor mais escura ao clicar */
+    }
+
+    .temaMatematica {
+        background-color: #FF9C62;
+        border: 2px solid #e68848;
+        transition: transform 0.3s, background-color 0.2s;
+    }
+
+    .temaMatematica:hover {
+        transform: scale(1.05);
+    }
+
+    .temaMatematica:active {
+        background-color: #e68c48;
+        /* Cor mais escura ao clicar */
+    }
+
+    .temaArtes {
+        background-color: #df83ef;
+        border: 2px solid #c772d0;
+        transition: transform 0.3s, background-color 0.2s;
+    }
+
+    .temaArtes:hover {
+        transform: scale(1.05);
+    }
+
+    .temaArtes:active {
+        background-color: #c874d0;
+        /* Cor mais escura ao clicar */
+    }
+
+    .temaBiologia {
+        background-color: #B1C97D;
+        border: 2px solid #99b667;
+        transition: transform 0.3s, background-color 0.2s;
+    }
+
+    .temaBiologia:hover {
+        transform: scale(1.05);
+    }
+
+    .temaBiologia:active {
+        background-color: #99b467;
+        /* Cor mais escura ao clicar */
+    }
+
+    .temaPortugues {
+        background-color: #86baee;
+        border: 2px solid #6da9d8;
+        transition: transform 0.3s, background-color 0.2s;
+    }
+
+    .temaPortugues:hover {
+        transform: scale(1.05);
+    }
+
+    .temaPortugues:active {
+        background-color: #72a6db;
+        /* Cor mais escura ao clicar */
+    }
+
+    button {
+        cursor: pointer;
+    }
+
+    h2 {
+        font-family: 'Nunito';
+        margin-left: 2vh;
+    }
+
+
+    #voltar {
+        display: none;
+    }
+
+
+
+    @media (max-width: 768px) {
+        .container-botao button {
+            width: 80vw;
+            height: 8vh;
+            font-size: 2.5vh;
+        }
+
+        h2 {
+            font-size: 3vh;
+            text-align: center;
+        }
+
+        .imagemGirassol {
+            display: none;
+        }
+
+        #voltar {
+            display: inline;
+            cursor: pointer;
+        }
+    }
+</style>
+
 <body>
-    
-    <div class="container">
-        <div class="fundo-branco-quiz">
-            <h3 id="pergunta">Quem ganhou a copa do mundo de 2022?</h3>
-            <img class="imagem-quiz" src="" alt="" id="imagemPergunta">
+    <header>
+        <div class="voltar" id="voltarParaInicio">
+         <span class="material-icons" id="voltar" onclick="window.location.href='jogos.html'">arrow_back</span>
 
-            <div class="alternativas">
-                <button class="alternativa" data-letra="A">Alternativa A</button>
-                <button class="alternativa" data-letra="B">Alternativa B</button>
-                <button class="alternativa" data-letra="C">Alternativa C</button>
-                <button class="alternativa" data-letra="D">Alternativa D</button>
-                <button class="alternativa" data-letra="E">Alternativa E</button>
-            </div>
-            <div class="botoes">
-                <button id="buttonVoltar" onclick="window.location.href='capaQuiz.html?'">Sair do Jogo</button>
-                <button id="pular" class="botao-pular">Pular Pergunta</button>
-            </div>
+            <h2>Escolha a categoria</h2>
+            <div class="linha"></div>
         </div>
+    </header>
+    <main>
+        <div class="container-botao">
+            <button class="temaGeografia"
+                onclick="window.location.href='quiz.html?categoria=geografia';">GEOGRAFIA</button>
+            <button class="temaHistoria"
+                onclick="window.location.href='quiz.html?categoria=historia';">HISTÓRIA</button>
+            <button class="temaBiologia"
+                onclick="window.location.href='quiz.html?categoria=biologia';">BIOLOGIA</button>
+            <button class="temaMatematica"
+                onclick="window.location.href='quiz.html?categoria=matematica';">MATEMÁTICA</button>
+            <button class="temaPortugues"
+                onclick="window.location.href='quiz.html?categoria=portugues';">PORTUGUÊS</button>
+            <button class="temaArtes" onclick="window.location.href='quiz.html?categoria=artes';">ARTES</button>
 
-        <!-- Modal -->
-        <div id="modalResultado" class="modal">
-            <div class="modal-conteudo">
-                <span class="fechar" id="fecharModal">&times;</span>
-                <h3>Resultados</h3>
-                <p id="tempoFinal"></p>
-                <p id="acertos"></p>
-                <h4>Histórico:</h4>
-                <p id="historico"></p>
-                <button id="reiniciar">Reiniciar Quiz</button>
-                <button id="paginaInicialJogos"onclick="window.location.href='capaQuiz.html'">Voltar ao Início</button>
-            </div>
         </div>
-    </div>
+        <div class="imagemGirassol"> <img src="img/girassol-footer.png" alt="imagem girassol"></div>
+    </main>
 
-    <script>
-        let perguntaAtual = 0;
-        let acertos = 0;
-        let tempoRestante = 0; // Cronômetro de controle do tempo
-        let timer;
-        let perguntas = []; // Array para armazenar as perguntas da categoria escolhida
 
-        // Função para iniciar o cronômetro
-        function iniciarCronometro() {
-            tempoRestante = 0;
-            timer = setInterval(() => {
-                tempoRestante++;
-            }, 1000);
-        }
 
-        // Função para carregar perguntas do JSON
-        function carregarPerguntas(categoria) {
-            fetch('perguntas.json')
-                .then(response => response.json())
-                .then(data => {
-                    perguntas = data[categoria]; // Carrega perguntas da categoria escolhida
-                    carregarPergunta(); // Carrega a primeira pergunta
-                    iniciarCronometro(); // Inicia o cronômetro ao carregar as perguntas
-                })
-                .catch(error => console.error('Erro ao carregar perguntas:', error));
-        }
-
-        // Função para carregar a pergunta
-        function carregarPergunta() {
-            const perguntaElement = document.getElementById("pergunta");
-            const imagemElement = document.getElementById("imagemPergunta");
-            const alternativasElement = document.querySelectorAll(".alternativa");
-
-            if (perguntaAtual < perguntas.length) {
-                const perguntaAtualData = perguntas[perguntaAtual];
-                perguntaElement.textContent = perguntaAtualData.pergunta;
-                imagemElement.src = `img/${perguntaAtualData.imagem}`; // Atualize para usar o nome da imagem específico de cada pergunta
-
-                alternativasElement.forEach((alternativa, index) => {
-                    alternativa.textContent = perguntaAtualData.alternativas[index];
-                    alternativa.classList.remove('correta', 'errada');
-                    alternativa.onclick = () => verificarResposta(index);
-                });
-            } else {
-                finalizarQuiz();
-            }
-        }
-
-        // Função para verificar a resposta
-        function verificarResposta(indice) {
-            const alternativasElement = document.querySelectorAll(".alternativa");
-            if (indice === perguntas[perguntaAtual].resposta) {
-                acertos++;
-                alternativasElement[indice].classList.add('correta'); // Marca como correta
-            } else {
-                alternativasElement[indice].classList.add('errada'); // Marca como errada
-                alternativasElement[perguntas[perguntaAtual].resposta].classList.add('correta'); // Mostra a correta
-            }
-            perguntaAtual++;
-            setTimeout(carregarPergunta, 1000); // Muda para a próxima pergunta após 1 segundo
-        }
-
-        // Função para finalizar o quiz
-        function finalizarQuiz() {
-            clearInterval(timer);
-            document.querySelector(".fundo-branco-quiz").classList.add("hidden");
-            mostrarResultadoModal();
-        }
-
-        // Função para mostrar o modal de resultados
-        function mostrarResultadoModal() {
-            const modal = document.getElementById("modalResultado");
-            const tempoFinal = document.getElementById("tempoFinal");
-            const acertosElement = document.getElementById("acertos");
-            const historicoElement = document.getElementById("historico");
-
-            // Formatar o tempo para minutos e segundos
-            const minutos = Math.floor(tempoRestante / 60);
-            const segundos = tempoRestante % 60;
-
-            tempoFinal.textContent = `Você completou o quiz em ${minutos} minutos e ${segundos} segundos.`;
-            acertosElement.textContent = `Você acertou ${acertos} de ${perguntas.length} perguntas.`;
-            historicoElement.textContent = `Última vez: ${acertos} acertos em ${minutos} minutos e ${segundos} segundos.`;
-
-            modal.style.display = "block"; // Mostra o modal
-        }
-
-        // Fechar o modal
-        document.getElementById("fecharModal").onclick = function () {
-            document.getElementById("modalResultado").style.display = "none";
-        }
-
-        // Pular pergunta
-        document.getElementById("pular").onclick = function () {
-            perguntaAtual++;
-            carregarPergunta();
-        }
-
-        // Reiniciar o quiz
-        document.getElementById("reiniciar").onclick = function () {
-            perguntaAtual = 0;
-            acertos = 0;
-            tempoRestante = 0; // Reinicia o tempo
-            document.querySelector(".fundo-branco-quiz").classList.remove("hidden");
-            document.getElementById("modalResultado").style.display = "none"; // Esconde o modal
-            iniciarCronometro();
-            carregarPergunta();
-        };
-
-        // Função para obter parâmetros da URL
-        function obterCategoria() {
-            const params = new URLSearchParams(window.location.search);
-            return params.get('categoria');
-        }
-
-        // Iniciar o quiz ao carregar a página com a categoria selecionada
-        const categoriaSelecionada = obterCategoria();
-        carregarPerguntas(categoriaSelecionada);
-    </script>
 </body>
 
 </html>
