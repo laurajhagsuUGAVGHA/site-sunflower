@@ -302,7 +302,7 @@ header {
 
 }
 
-.imagemCrian{
+.imagemCrian {
     width: 50%;
 }
 
@@ -542,7 +542,7 @@ a {
 
 
 
-@media (max-width: 720px) {
+@media (max-width: 768px) {
     .menu-icon {
         display: block;
         margin: 2vh 5vh 0 0;
@@ -643,23 +643,24 @@ a {
 
 
 
-.inclusao{
-    font-size: 4vh;
-    text-align: center;
-margin-left: 2vh;
-}
+    .inclusao {
+        font-size: 4vh;
+        text-align: center;
+        margin-left: 2vh;
+    }
 
     .titulo-dois {
         margin-top: -120vh;
         font-size: 4vh;
+        padding: 0 30px;
     }
 
     .importancia {
         font-size: 3vh;
         width: 100%;
-    text-align: center;
-    justify-content: center;
-    
+        text-align: center;
+        justify-content: center;
+
     }
 
     .icones {
@@ -669,6 +670,7 @@ margin-left: 2vh;
         flex-direction: column;
         margin-top: 20vh;
     }
+
     .icone2,
     .icone3 {
         margin-top: 10vh;
@@ -691,16 +693,25 @@ margin-left: 2vh;
     }
 
     .imagemCrian img {
-        width: 100%;
-        height: auto;
+        display: none;
     }
 
     .objetivo {
         width: auto;
         font-size: 3vh;
         text-align: center;
-       margin-left: 8vh;
+        margin: 50px 0;
     }
+
+    .objetivo h2 {
+        font-size: 4vh;
+    }
+
+    .objetivo li{
+        font-size: 18px;
+    }
+
+
 
 
 
@@ -709,6 +720,7 @@ margin-left: 2vh;
         align-items: center;
         flex-direction: column;
         width: 100%;
+        margin-top: 0;
     }
 
     .app {
@@ -738,6 +750,7 @@ margin-left: 2vh;
         flex-direction: column;
         max-width: 100%;
         height: 250vh;
+        margin-top: 20vh;
 
     }
 
@@ -751,10 +764,11 @@ margin-left: 2vh;
     }
 
     .box {
-        margin-right: 20vh;
         align-items: center;
         text-align: center;
         margin-top: 20px;
+        display: flex;
+        flex-direction: column;
     }
 
     .text-titulo {
@@ -768,7 +782,7 @@ margin-left: 2vh;
         justify-content: center;
         align-items: center;
         width: 100%;
-        margin-left: 8vh;
+        flex-direction: column;
 
     }
 
